@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shop Registration</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.hidden {
+  display: none;
+}
+  </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coffee Shop Registration</h1>
+        <form id="registration-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </form>
+        <div id="success-message" class="hidden">
+          <h2>Registration Successful!</h2>
+          <p>Welcome, <span id="registered-name"></span>. You can now purchase coffee from our shop.</p>
+          <div class="purchase-options">
+            <h3>Choose your coffee:</h3>
+            <div class="coffee-form">
+              <div class="form-group">
+                <label for="coffee-size">Size:</label>
+                <select id="coffee-size">
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="coffee-type">Type:</label>
+                <select id="coffee-type">
+                  <option value="americano">Americano</option>
+                  <option value="latte">Latte</option>
+                  <option value="cappuccino">Cappuccino</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="coffee-extras">Extras:</label>
+                <input type="text" id="coffee-extras" placeholder="Add extra shots, syrups, etc.">
+              </div>
+              <button id="purchase-btn" class="btn">Purchase Coffee</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  <script>
+   const registrationForm = document.getElementById('registration-form');
+const successMessage = document.getElementById('success-message');
+const registeredName = document.getElementById('registered-name');
+const coffeeSizeSelect = document.getElementById('coffee-size');
+const coffeeTypeSelect = document.getElementById('coffee-type');
+const coffeeExtrasInput = document.getElementById('coffee-extras');
+const purchaseBtn = document.getElementById('purchase-btn');
+
+registrationForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  // Validate the form fields
+  if (name && email && password) {
+    registrationForm.classList.add('hidden');
+    successMessage.classList.remove('hidden');
+    registeredName.textContent = name;
+  } else {
+    alert('Please fill in all the required fields.');
+  }
+});
+
+purchaseBtn.addEventListener('click', () => {
+  const coffeeSize = coffeeSizeSelect.value;
+  const coffeeType = coffeeTypeSelect.value;
+  const coffeeExtras = coffeeExtrasInput.value;
+
+  alert(`You have purchased a ${coffeeSize} ${coffeeType} coffee with the following extras: ${coffeeExtras}. Enjoy your coffee!`);
+});
+  </script>
+</body>
+</html>

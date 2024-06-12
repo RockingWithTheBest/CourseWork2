@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style >
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body#coffee{
+            background-color: #f2f2f2;
+        }
+        button:hover{
+            
+            cursor: pointer;
+            
+        }
+        button{
+            border-radius: 20px;
+            background-color: #555;
+            cursor: pointer;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .form option{
+            border-radius:5px;
+        }
+        h1{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        header{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 40px;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .model{
+            display: none;
+            background-color: rgba(0, 0, 0, 0.4);
+            position:fixed;
+            z-index: 1;
+            left: 0;
+             top: 0;
+             width: 100%;
+            height: 100%;
+            overflow: auto;
+        }
+        .modal-content{
+            background-color: #fefefe;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            display: flex;
+             flex-direction: column;
+            align-items: center;
+        }
+        .model.show{
+            display: block;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+   
+    <div id="coffee" class = "hidden">
+        <div class="later-header">
+            <header>
+                Latte Cafe
+            </header>
+        </div>
+        <div class="order-form">
+            <form id = "order-form" class = "form">
+                <h1>Coffee Order's</h1>
+                <div>
+                    <label class = "form-Labels" >Drink's :</label>
+                    <select name="drink" id="drink">
+                        <option value ="" selected hidden>Select a drink</option>
+                        <option value="americano">Americano</option>
+                        <option value="latte">Mocha</option>
+                        <option value="cappuccino">Cappuccino</option>
+                        <option value="espresso">Espresso</option>
+                    </select>
+                </div>
+                <div>
+                    <label class = "form-Labels" >Size :</label>
+                    <select name="size" id="size">
+                        <option value ="" selected hidden>Select size</option>
+                        <option value="americano">Small</option>
+                        <option value="latte">Medium</option>
+                        <option value="cappuccino">Regular</option>
+                    </select>
+                </div>
+                <div>
+                    <label class = "form-Labels" >Extra's :</label>
+                    <input type="text" id="extra" placeholder="Any extra e.g cinomon, honey, syrup e.t.c">
+                </div>
+                <div>
+                    <label class = "form-Labels" >Names :</label>
+                    <input type="text" id="name" placeholder="Any extra e.g cinomon, honey, syrup e.t.c">
+                </div>
+                <div>
+                    <label class = "form-Labels" >Email :</label>
+                    <input type="email" id="email" placeholder="Enter you email address">
+                </div>
+                <div>
+                    <button>Place Order</button>
+                </div>
+    
+             
+            </form>
+        </div>
+        <div class="model" id ="orderModel">
+            <div class  ="modal-content">
+                <h2>Order Summary</h2>
+                <p id = "order-summary">
+                    
+                </p>
+                <button id="confirm-order">Confirm</button>
+                <button id="cancel-order">Cancel</button>
+            </div>
+        </div>
+        <script>
+            const orderSummaryElement = document.getElementById('order-summary');
+            const confirmOrderButton = document.getElementById('confirm-order');
+            const cancelOrderButton = document.getElementById('cancel-order');
+            const orderForm = document.getElementById('order-form');
+            const orderModal = document.getElementById('orderModel');
+    
+            const placeOrderButton = document.querySelector('#order-form button');
+    
+            placeOrderButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                const drink = document.getElementById('drink').value.trim();
+                const size = document.getElementById('size').value.trim();
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const extra = document.getElementById('extra').value.trim();
+    
+                const orderSummarytext = `Drinks: ${drink}\nSize: ${size}\nExtras: ${extra}\nName: ${name}\nEmail: ${email}`;
+                orderSummaryElement.textContent = orderSummarytext;
+    
+           
+                orderModal.classList.add('show'); 
+            });
+    
+    
+            confirmOrderButton.addEventListener('click',() =>{
+                console.log('Order confirmed!');
+                if(confirm('Thanks for confirming order')){
+                    orderModal.classList.remove('show');
+                }
+                
+            });
+            cancelOrderButton.addEventListener('click',() =>{
+                if(confirm('Are you sure you want to cancel?')){
+                    orderModal.classList.remove('show');
+                }
+            });
+    
+        </script>
+    </div>
+
+</body>
+</html>

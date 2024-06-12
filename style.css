@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+#bodyCata, #bodyCata2 {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1440px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card .img img{
+    width:140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+ .wrapperCatalog2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left top, #031A9A, #8B53FF);
+    padding: 0 35px;
+}
+.card h2{
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+.card span{
+    color:#6a6d78;
+    font-size: 1.31rem;
+}
+.carousel :where(.card, .img){
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.carousel .card {
+    height: 342px;
+    list-style: none;
+    background:white;
+    border-radius: 8px;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    padding-bottom: 15px;
+    justify-content:center;
+    flex-direction: column;
+}
+.card .img {
+    background: rgb(120, 120, 224);
+    width: 148px;   
+    height: 148px;
+    border-radius: 50%;
+}
+ #wrapper2 {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+#wrapper2 .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3 ) - 12px) ;
+    overflow-x: auto;
+    gap: 16px;
+     overflow: hidden;  
+     scroll-behavior: smooth;
+}
+.carousel.dragging{
+    scroll-behavior: auto;
+}
+.carousel.dragging .card{
+    cursor:pointer;
+    user-select: none;;
+}
+ #wrapper2 i:first-child {
+    left: 426px;
+}
+ #wrapper2 i:last-child {
+    right: 399px;
+}
+ #wrapper2 i{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background:white;
+    text-align: center;
+    line-height: 50px;
+    border-radius:50%;
+    cursor: pointer;
+
+    top: 50%;
+     font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px  6px rgba(0, 0, 0, 0.23);
+ 
+}
+
+/* @media screen and (max-width: 900px) {
+    #wrapper .carousel, #wrapper2 .carousel{
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    url.carousel {
+        position: relative;
+        left: 144px;
+    }
+    #wrapper i:first-child, #wrapper2 i:first-child {
+        left: 66px;
+    }
+    #wrapper i:last-child, #wrapper2 i:last-child {
+        right: 47px;
+    }
+} */
+ 
+
+
+
+
+
+  
+
+
+button {
+    width: 100px;
+    height: 59px;
+}
+
+.hidden{
+    display: none;
+}
+#wrapper .hidden{
+    display: none;
+}
+#imgEx .hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+img.exit {
+    width: 45px;
+}
+
+
+
+
+@media screen and (max-width: 390px) {
+    div#imgEx {
+        position: relative;
+        top: 715px;
+        background: white;
+        border-radius: 4px;
+        left: 111px;
+        width: 152px;
+    }
+   
+}
+
+
+
+
+@media screen and (max-width:390px) {
+    
+
+    .burger-menu {
+        opacity: 0;
+        width: 66px;
+        position: relative;
+        left: -146px;
+        background: antiquewhite;
+        height: 87px;
+        transition: width 0.5s ease;
+        overflow: hidden;
+    }
+ 
+   
+    
+   
+   
+
+   
+
+
+    .langWrap a {
+        
+        font-family: Roboto;
+        font-style: italic;
+        font-size: 6px;
+    }
+}
+
+.modal-content {
+    background: #614b4b;
+    color: white;
+    font-size: 19px;
+    border-radius: 26px;
+    font-style: italic;
+}
+button#reset-btn {
+    width: 109px;
+    height: 45px;
+    margin-bottom: 7px;
+    font-size: 18px;
+}
+button#close-btn {
+    font-size: 18px;
+    width: 109px;
+    height: 45px;
+}
+
+@media screen and (max-width: 390px) {
+    img#exitPurchase {
+        width: 21px;
+        border-radius: 20%;
+        position: relative;
+        left: 323px;
+        top: -75px;
+        cursor: pointer;
+    }
+}
+
+/* @media screen and (max-width: 320px) {
+    .carousel .card {
+        height: 254px;
+        list-style: none;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-bottom: 15px;
+        justify-content: center;
+        width: 173px;
+        position: relative;
+        flex-direction: column;
+        left: 118px;
+    }
+        #wrapper i:first-child, #wrapper2 i:first-child {
+            left: 189px;
+        }
+        #wrapper i:last-child, #wrapper2 i:last-child {
+            right: 186px;
+        }
+} */
+
+
+.card .img img{
+    width:140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+}
+#bodyCata{
+ 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to left top, #031A9A, #8B53FF);
+    padding: 0 35px;
+}
+.card h2{
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+.card span{
+    color:#6a6d78;
+    font-size: 1.31rem;
+}
+.carousel :where(.card, .img){
+    display: flex;
+    align-items:center;
+    justify-content:center;
+}
+.carousel .card {
+    height: 342px;
+    list-style: none;
+    background:white;
+    border-radius: 8px;
+    display: flex;
+    align-items:center;
+    cursor: pointer;
+    padding-bottom: 15px;
+    justify-content:center;
+    flex-direction: column;
+}
+.card .img {
+    background: rgb(120, 120, 224);
+    width: 148px;   
+    height: 148px;
+    border-radius: 50%;
+}
+#wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+}
+#wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3 ) - 12px) ;
+    overflow-x: auto;
+    gap: 16px;
+     overflow: hidden;  
+     scroll-behavior: smooth;
+}
+.carousel.dragging{
+    scroll-behavior: auto;
+}
+.carousel.dragging .card{
+    cursor:pointer;
+    user-select: none;;
+}
+#wrapper i:first-child{
+    left: -22px;
+}
+#wrapper i:last-child{
+    right: -22px;
+}
+#wrapper i{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background:white;
+    text-align: center;
+    line-height: 50px;
+    border-radius:50%;
+    cursor: pointer;
+
+    top: 50%;
+     font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px  6px rgba(0, 0, 0, 0.23);
+ 
+}
+
+@media screen and (max-width: 768px) {
+    #wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+    div#imgEx {
+        position: relative;
+        top: -41px;
+        background: white;
+        border-radius: 4px;
+        left: 129px;
+        width: 95px;
+    }
+
+    #wrapper {
+        left: -205px;
+        max-width: 1440px;
+        width: 100%;
+        position: relative;
+    }
+    #wrapper i:first-child {
+        left: 85px;
+    }
+    #wrapper i:last-child {
+        right: -269px;
+    }
+    
+  }
+  @media screen and (max-width: 600px) {
+    #wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+
+  }
+
+
+
+
+  @media screen and (max-width: 320px) {
+   
+    #wrapper {
+        left: -53px;
+        max-width: 1100px;
+        width: 100%;
+        position: relative;
+    }
+    .carousel {
+        position: relative;
+        left: 1px;
+    }
+    #wrapper i:last-child {
+        right: -9px;
+        top: 474px;
+    }
+    #wrapper i:first-child {
+        left: 99px;
+        top: 30px;
+
+    }
+    div#imgEx {
+        position: relative;
+        top: 295px;
+        background: white;
+        border-radius: 4px;
+        left: -10px;
+        width: 95px;
+    }
+    div#Catalog1 {
+        width: 306px;
+    }
+    .carousel .card {
+        width: 223px;
+        height: 342px;
+        list-style: none;
+        background: white;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding-bottom: 15px;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        left: 97px;
+    }
+    div#imgEx {
+        position: absolute;
+        top: 675px;
+        background: white;
+        border-radius: 4px;
+        left: 111px;
+        width: 93px;
+        height: 40px;
+    }
+    #wrapper .carousel {
+        display: grid;
+       
+      
+        gap: 0px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+}

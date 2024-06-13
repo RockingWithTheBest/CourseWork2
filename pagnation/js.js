@@ -38,3 +38,6 @@ firstButton .addEventListener('click', () => {
 document.querySelector(".exit-btn").addEventListener('click', () => {
   window.history.back();
 });
+
+
+const getValue = localStorage.getItem("Is_Language")

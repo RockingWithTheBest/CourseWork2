@@ -139,13 +139,19 @@ button.exit-btn {
       height: 196px;
       object-fit: cover;
   }
-  .carousel {
-    position: fixed;
-    width: 392px;
-    height: 548px;
-    overflow: hidden;
-    left: 85px;
-    top: 211px;
+  .object {
+    top: 136px;
+    position: relative;
+    display: block;
+
+}
+.carousel {
+  position: relative;
+  width: 392px;
+  height: 548px;
+  overflow: hidden;
+  left: 85px;
+
 }
   .carousel-controls {
     position: absolute;
@@ -163,14 +169,12 @@ button.exit-btn {
 button.exit-btn {
   width: 80px;
   height: 31px;
-
   font-family: Inter;
-
   color: #fff;
   margin-top: 24px;
   position: relative;
-  top: 388px;
-  left: 4px;
+  top: -217px;
+  left: 170px;
   font-size: 15px;
 }
 

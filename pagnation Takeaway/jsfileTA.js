@@ -45,13 +45,13 @@ var ArrayTake = {
     "fries":"Fries with a Burger",
     "burger":"Portuguese Burger",
     "sushi":"Sushi",
-    "english":"Exit"
+    "btn":"Exit"
   },
   "russian":{
     "fries":"Картофель с Бургером",
     "burger":"Португальский бургер",
     "sushi":"Суши",
-    "russian":"Выход"
+    "btn":"Выход"
   }
 }
 const getValue = localStorage.getItem("Is_Language");
@@ -59,11 +59,11 @@ if(getValue === "russian"){
   document.querySelector(".fries").textContent= ArrayTake["russian"].fries;
   document.querySelector(".burger").textContent= ArrayTake["russian"].burger;
   document.querySelector(".sushi").textContent= ArrayTake["russian"].sushi;
-  document.querySelector(".exitbtn").textContent= ArrayTake["russian"].exitbtn;
+  document.querySelector(".btn").textContent= ArrayTake["russian"].btn;
 }
 else if(getValue === "english"){
   document.querySelector(".fries").textContent= ArrayTake["english"].fries;
   document.querySelector(".burger").textContent= ArrayTake["english"].burger;
   document.querySelector(".sushi").textContent= ArrayTake["english"].sushi;
-  document.querySelector(".exitbtn").textContent= ArrayTake["english"].exitbtn;
+  document.querySelector(".btn").textContent= ArrayTake["english"].btn;
 }

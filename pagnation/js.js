@@ -48,7 +48,7 @@ var ArrayValues = {
     "cappucinospeC":"Cappucino Special",
     "china":"China Tea", 
     "maffed":"Maffed Coffee",
-    "exitbtn":"Exit"
+    "btn":"Exit"
   },
   "russian":{
     "black":"Черный чай",
@@ -56,7 +56,7 @@ var ArrayValues = {
     "cappucinospeC":"Специал каппучино",
     "china":"Китайский чай", 
     "maffed":"Взбитый чай",
-    "exitbtn":"Выйти"
+    "btn":"Выйти"
   }
 }
 
@@ -64,14 +64,14 @@ var ArrayValues = {
 console.log(getValue);
 if(getValue === "russian"){
   value.textContent = ArrayValues["russian"].black;
-  document.querySelector(".exitbtn").textContent = ArrayValues["russian"].exitbtn;
+  document.querySelector(".btn").textContent = ArrayValues["russian"].btn;
   document.querySelector(".regularcapo").textContent = ArrayValues["russian"].regularcapo;
   document.querySelector(".cappucinospeC").textContent = ArrayValues["russian"].cappucinospeC;
   document.querySelector(".china").textContent = ArrayValues["russian"].china;
   document.querySelector(".maffed").textContent = ArrayValues["russian"].maffed;
 }
 else if (getValue ==="english"){
-  document.querySelector(".exitbtn").textContent = ArrayValues["english"].exitbtn;
+  document.querySelector(".btn").textContent = ArrayValues["english"].btn;
   document.querySelector(".black").textContent = ArrayValues["english"].black;
   document.querySelector(".regularcapo").textContent = ArrayValues["english"].regularcapo;
   document.querySelector(".cappucinospeC").textContent = ArrayValues["english"].cappucinospeC;

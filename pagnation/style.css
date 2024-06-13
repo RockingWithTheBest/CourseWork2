@@ -3,8 +3,7 @@
     width: 392px;
     height: 548px;
     overflow: hidden;
-    top: 77px;
-    left: 538px;
+ 
 }
   
   .carousel-item {
@@ -16,7 +15,12 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
   }
-  
+  .object {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
   .carousel-item.active {
     opacity: 1;
   }

@@ -35,7 +35,7 @@ firstButton .addEventListener('click', () => {
     showItem(currentIndex);
 });
 
-document.querySelector(".exit-btn").addEventListener('click', () => {
+document.querySelector(".exitbtn").addEventListener('click', () => {
   window.history.back();
 });
 
@@ -44,12 +44,14 @@ var ArrayTake = {
   "english":{
     "fries":"Fries with a Burger",
     "burger":"Portuguese Burger",
-    "sushi":"Sushi"
+    "sushi":"Sushi",
+    "english":"Exit"
   },
   "russian":{
     "fries":"Картофель с Бургером",
     "burger":"Португальский бургер",
-    "sushi":"Суши"
+    "sushi":"Суши",
+    "russian":"Выход"
   }
 }
 const getValue = localStorage.getItem("Is_Language");
@@ -57,9 +59,11 @@ if(getValue === "russian"){
   document.querySelector(".fries").textContent= ArrayTake["russian"].fries;
   document.querySelector(".burger").textContent= ArrayTake["russian"].burger;
   document.querySelector(".sushi").textContent= ArrayTake["russian"].sushi;
+  document.querySelector(".exitbtn").textContent= ArrayTake["russian"].exitbtn;
 }
 else if(getValue === "english"){
   document.querySelector(".fries").textContent= ArrayTake["english"].fries;
   document.querySelector(".burger").textContent= ArrayTake["english"].burger;
   document.querySelector(".sushi").textContent= ArrayTake["english"].sushi;
+  document.querySelector(".exitbtn").textContent= ArrayTake["english"].exitbtn;
 }

@@ -5,7 +5,7 @@
     overflow: hidden;
  
 }
-button.exit-btn {
+button.exitbtn {
   font-size: 17px;
   width: 104px;
   height: 38px;
@@ -20,7 +20,7 @@ button.exit-btn {
 body {
   background: linear-gradient(94deg, #0b0610db, transparent);
 }
-.exit-btn:hover{
+.exitbtn:hover{
   border: 2px solid #3a3434;
   background: #fff;
   cursor: pointer;
@@ -107,7 +107,7 @@ body {
   overflow: hidden;
   left: 52px;
 }
-button.exit-btn {
+button.exitbtn {
   width: 94px;
   height: 34px;
   border-radius: 9px;
@@ -165,7 +165,7 @@ button.exit-btn {
   font-size: 13px;
   font-family: Inter;
 }
-button.exit-btn {
+button.exitbtn {
   width: 80px;
   height: 31px;
   font-family: Inter;
@@ -186,7 +186,7 @@ button.exit-btn {
     overflow: hidden;
     left: 83px;
 }
-button.exit-btn {
+button.exitbtn {
   width: 80px;
   height: 31px;
   font-family: Inter;
@@ -206,7 +206,7 @@ button.exit-btn {
     overflow: hidden;
     left: 72px;
 }
-button.exit-btn {
+button.exitbtn {
   width: 80px;
   height: 31px;
   font-family: Inter;
@@ -226,7 +226,7 @@ button.exit-btn {
     overflow: hidden;
     left: 62px;
 }
-button.exit-btn {
+button.exitbtn {
   width: 80px;
   height: 31px;
   font-family: Inter;
@@ -246,7 +246,7 @@ button.exit-btn {
     overflow: hidden;
     left: 52px;
 }
-button.exit-btn {
+button.exitbtn {
   width: 80px;
   height: 31px;
   font-family: Inter;

@@ -59,7 +59,7 @@ var ArrayValues = {
     "exitbtn":"Выйти"
   }
 }
-const value = document.querySelector(".black"); 
+
 
 console.log(getValue);
 if(getValue === "russian"){

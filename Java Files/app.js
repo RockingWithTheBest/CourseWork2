@@ -829,82 +829,82 @@ passwordTransitionElement.style.color = "white";
             }
         });
         
-        // const savedLang = localStorage.getItem('Is_Language');
-        // console.log(localStorage.getItem('Is_Language'));
-        // const langAttr = "english";
-        // const langAttrRus = "russian";
-        //  if(savedLang ==="english"){
-        //     console.log("eng")
-        //      coffeeorderlang.textContent = ordeformMassive[langAttr].coffeeorder;
-        //      drinkorderlang.textContent = ordeformMassive[langAttr].drink;
-        //      selectdrinkorderlang.textContent = ordeformMassive[langAttr].selectdrink;
-        //      americanoorderlang.textContent = ordeformMassive[langAttr].americano;
-        //      mocha.textContent = ordeformMassive[langAttr].mocha;
-        //      cappuccino.textContent = ordeformMassive[langAttr].cappuccino;
-        //      espresso.textContent = ordeformMassive[langAttr].espresso;
-        //      size.textContent = ordeformMassive[langAttr].size;
-        //      selectsize.textContent = ordeformMassive[langAttr].selectsize;
-        //      smallsize.textContent = ordeformMassive[langAttr].smallsize;
-        //      mediumsize.textContent = ordeformMassive[langAttr].mediumsize;
-        //      extra.textContent = ordeformMassive[langAttr].extra;
-        //      name1.textContent = ordeformMassive[langAttr].name;
-        //      placeorder.textContent = ordeformMassive[langAttr].placeorder;
-        //      emails.textContent = ordeformMassive[langAttr].emails;
-        //      regularsize.textContent = ordeformMassive[langAttr].regularsize;
+        const savedLang = localStorage.getItem('Is_Language');
+        console.log(localStorage.getItem('Is_Language'));
+        const langAttr = "english";
+        const langAttrRus = "russian";
+         if(savedLang ==="english"){
+            console.log("eng")
+             coffeeorderlang.textContent = ordeformMassive[langAttr].coffeeorder;
+             drinkorderlang.textContent = ordeformMassive[langAttr].drink;
+             selectdrinkorderlang.textContent = ordeformMassive[langAttr].selectdrink;
+             americanoorderlang.textContent = ordeformMassive[langAttr].americano;
+             mocha.textContent = ordeformMassive[langAttr].mocha;
+             cappuccino.textContent = ordeformMassive[langAttr].cappuccino;
+             espresso.textContent = ordeformMassive[langAttr].espresso;
+             size.textContent = ordeformMassive[langAttr].size;
+             selectsize.textContent = ordeformMassive[langAttr].selectsize;
+             smallsize.textContent = ordeformMassive[langAttr].smallsize;
+             mediumsize.textContent = ordeformMassive[langAttr].mediumsize;
+             extra.textContent = ordeformMassive[langAttr].extra;
+             name1.textContent = ordeformMassive[langAttr].name;
+             placeorder.textContent = ordeformMassive[langAttr].placeorder;
+             emails.textContent = ordeformMassive[langAttr].emails;
+             regularsize.textContent = ordeformMassive[langAttr].regularsize;
  
  
  
  
  
-        //      confirmlaang.textContent = confirmationForm[langAttr].confirmationheader;
-        //      namelang.textContent = confirmationForm[langAttr].forlanguageUSer;
-        //      passwordlang.textContent = confirmationForm[langAttr].passwordlang;
-        //      submitlang.textContent = confirmationForm[langAttr].confirmMiddlebtn;
+             confirmlaang.textContent = confirmationForm[langAttr].confirmationheader;
+             namelang.textContent = confirmationForm[langAttr].forlanguageUSer;
+             passwordlang.textContent = confirmationForm[langAttr].passwordlang;
+             submitlang.textContent = confirmationForm[langAttr].confirmMiddlebtn;
  
  
-        //      contactme.textContent = footerArrays[langAttr].footecontactme;
-        //      footeremail.textContent = footerArrays[langAttr].footeremail;
-        //      footerphone.textContent = footerArrays[langAttr].footerphonenumber;
-        //      footeraddress.textContent = footerArrays[langAttr].footerlocation;
-        //      footergitHub.textContent = footerArrays[langAttr].footergitHub;
+             contactme.textContent = footerArrays[langAttr].footecontactme;
+             footeremail.textContent = footerArrays[langAttr].footeremail;
+             footerphone.textContent = footerArrays[langAttr].footerphonenumber;
+             footeraddress.textContent = footerArrays[langAttr].footerlocation;
+             footergitHub.textContent = footerArrays[langAttr].footergitHub;
  
  
-        //      infoname.textContent = UserInformation[langAttr].fullnamesLS;
-        //      userinfo.textContent = UserInformation[langAttr].userinformation;
-        //      infopass.textContent = UserInformation[langAttr].passwordLS;
-        //      infoemail.textContent = UserInformation[langAttr].modalemailLS;
-        //      infocontact.textContent = UserInformation[langAttr].contactLS;
-        //      birthinfo.textContent = UserInformation[langAttr].birthdayLS;
-        //      resetbtn.textContent = UserInformation[langAttr].resetbtn;
-        //      closebtn.textContent = UserInformation[langAttr].closebtn;
+             infoname.textContent = UserInformation[langAttr].fullnamesLS;
+             userinfo.textContent = UserInformation[langAttr].userinformation;
+             infopass.textContent = UserInformation[langAttr].passwordLS;
+             infoemail.textContent = UserInformation[langAttr].modalemailLS;
+             infocontact.textContent = UserInformation[langAttr].contactLS;
+             birthinfo.textContent = UserInformation[langAttr].birthdayLS;
+             resetbtn.textContent = UserInformation[langAttr].resetbtn;
+             closebtn.textContent = UserInformation[langAttr].closebtn;
  
  
  
-        //      cred.textContent = credentials[langAttr].Creditals;
-        //      userlogindetail.textContent = credentials[langAttr].userpeep;
-        //      userlogout.textContent = credentials[langAttr].logoutIncon;
+             cred.textContent = credentials[langAttr].Creditals;
+             userlogindetail.textContent = credentials[langAttr].userpeep;
+             userlogout.textContent = credentials[langAttr].logoutIncon;
  
-        //     createaccount.textContent = Container[langAttr].createaccount;
-        //      usernamelable.textContent = Container[langAttr].usernameLable;
-        //      errormessage.textContent = Container[langAttr].errormessage;
-        //      birthdaylabel.textContent = Container[langAttr].birthdayLabel;
-        //      contactLabel.textContent = Container[langAttr].contactLabel;
-        //     emailLabel.textContent = Container[langAttr].emailLabel;
-        //      passwordLabel.textContent = Container[langAttr].passwordLabel;
-        //      upper.textContent = Container[langAttr].upper;
-        //      lower.textContent = Container[langAttr].lower;
-        //       special_char.textContent = Container[langAttr].special_char;
-        //       number1.textContent = Container[langAttr].number;
-        //       length.textContent = Container[langAttr].length;
-        //       ConfirmPasswordLabel.textContent = Container[langAttr].ConfirmPasswordLAbel;
-        //       Nickname.textContent = Container[langAttr].Nickname;
+            createaccount.textContent = Container[langAttr].createaccount;
+             usernamelable.textContent = Container[langAttr].usernameLable;
+             errormessage.textContent = Container[langAttr].errormessage;
+             birthdaylabel.textContent = Container[langAttr].birthdayLabel;
+             contactLabel.textContent = Container[langAttr].contactLabel;
+            emailLabel.textContent = Container[langAttr].emailLabel;
+             passwordLabel.textContent = Container[langAttr].passwordLabel;
+             upper.textContent = Container[langAttr].upper;
+             lower.textContent = Container[langAttr].lower;
+              special_char.textContent = Container[langAttr].special_char;
+              number1.textContent = Container[langAttr].number;
+              length.textContent = Container[langAttr].length;
+              ConfirmPasswordLabel.textContent = Container[langAttr].ConfirmPasswordLAbel;
+              Nickname.textContent = Container[langAttr].Nickname;
          
-        //  Accept.textContent = Container[langAttr].acceptButton;
-        //  Next.textContent = Container[langAttr].nextvalueButton;
-        //      agree.textContent = Container[langAttr].agreement;
+         Accept.textContent = Container[langAttr].acceptButton;
+         Next.textContent = Container[langAttr].nextvalueButton;
+             agree.textContent = Container[langAttr].agreement;
  
-        //       submit.textContent = Container[langAttr].submit;
-        //       register.textContent = Container[langAttr].hey;
+              submit.textContent = Container[langAttr].submit;
+              register.textContent = Container[langAttr].hey;
  
            
  
@@ -912,164 +912,164 @@ passwordTransitionElement.style.color = "white";
  
  
  
-        //      headerOrder.textContent = menList[langAttr].headerOrder;
-        //      Entres.textContent = menList[langAttr].Entres;
-        //      avocado.textContent = menList[langAttr].avocado;
-        //      saratoga.textContent = menList[langAttr].saratoga;
-        //      rocket.textContent = menList[langAttr].rocket;
-        //      smoked.textContent = menList[langAttr].smoked;
-        //      pepe.textContent = menList[langAttr].pepe;
-        //      spaghetti.textContent = menList[langAttr].spaghetti;
-        //      lobster.textContent = menList[langAttr].lobster;
-        //      toast.textContent = menList[langAttr].toast;
-        //      Mains.textContent = menList[langAttr].Mains;
-        //      newyork.textContent = menList[langAttr].newyork;
-        //      fiddlehands.textContent = menList[langAttr].fiddlehands;
-        //      rosemary.textContent = menList[langAttr].rosemary;
-        //      sauce.textContent = menList[langAttr].sauce;
-        //      sea.textContent = menList[langAttr].sea;
-        //      whitegreen.textContent = menList[langAttr].whitegreen;
-        //      lemon.textContent = menList[langAttr].lemon;
-        //      chcikenDuck.textContent = menList[langAttr].chcikenDuck;
-        //      yukon.textContent = menList[langAttr].yukon;
-        //      month.textContent = menList[langAttr].month;
-        //      greenBeans.textContent = menList[langAttr].greenBeans;
+             headerOrder.textContent = menList[langAttr].headerOrder;
+             Entres.textContent = menList[langAttr].Entres;
+             avocado.textContent = menList[langAttr].avocado;
+             saratoga.textContent = menList[langAttr].saratoga;
+             rocket.textContent = menList[langAttr].rocket;
+             smoked.textContent = menList[langAttr].smoked;
+             pepe.textContent = menList[langAttr].pepe;
+             spaghetti.textContent = menList[langAttr].spaghetti;
+             lobster.textContent = menList[langAttr].lobster;
+             toast.textContent = menList[langAttr].toast;
+             Mains.textContent = menList[langAttr].Mains;
+             newyork.textContent = menList[langAttr].newyork;
+             fiddlehands.textContent = menList[langAttr].fiddlehands;
+             rosemary.textContent = menList[langAttr].rosemary;
+             sauce.textContent = menList[langAttr].sauce;
+             sea.textContent = menList[langAttr].sea;
+             whitegreen.textContent = menList[langAttr].whitegreen;
+             lemon.textContent = menList[langAttr].lemon;
+             chcikenDuck.textContent = menList[langAttr].chcikenDuck;
+             yukon.textContent = menList[langAttr].yukon;
+             month.textContent = menList[langAttr].month;
+             greenBeans.textContent = menList[langAttr].greenBeans;
  
-        //      menuAbout.textContent = menuMenuArr[langAttr].menfirst;
-        //      menuMenu.textContent = menuMenuArr[langAttr].mensecond;
-        //      menuInfo.textContent = menuMenuArr[langAttr].menuthird;
-        //      menuBooking.textContent = menuMenuArr[langAttr].menfourth;
-        //      LatteCafeTitler.textContent = menuMenuArr[langAttr].lattecafe;
+             menuAbout.textContent = menuMenuArr[langAttr].menfirst;
+             menuMenu.textContent = menuMenuArr[langAttr].mensecond;
+             menuInfo.textContent = menuMenuArr[langAttr].menuthird;
+             menuBooking.textContent = menuMenuArr[langAttr].menfourth;
+             LatteCafeTitler.textContent = menuMenuArr[langAttr].lattecafe;
  
-        //      mapLocation.textContent = MapLocation[langAttr].font;
+             mapLocation.textContent = MapLocation[langAttr].font;
  
-        //      home.textContent = footerData[langAttr].em;
-        //      about.textContent = footerData[langAttr].aby;
-        //      menu.textContent = footerData[langAttr].meu;
-        //      info.textContent = footerData[langAttr].info;
-        //      contact .textContent = footerData[langAttr].cnt;
-        //      boookings.textContent = footerData[langAttr].bkng;
-        //      privacyPolicy.textContent = footerData[langAttr].plan;
-        //      style.textContent = footerData[langAttr].guid;
-        //      license .textContent = footerData[langAttr].lic;
-        //      instruct.textContent = footerData[langAttr].instruct;
-        //      changelog.textContent = footerData[langAttr].log;
-        //      passwordGet.textContent = footerData[langAttr].paw;
-        //      number.textContent = footerData[langAttr].num;
-        //      charc.textContent = footerData[langAttr].charac;
-        //      latcafe.textContent = footerData[langAttr].latcafe;
-        //      buby.textContent = footerData[langAttr].buby;
-        //      webfl.textContent = footerData[langAttr].webfl;
+             home.textContent = footerData[langAttr].em;
+             about.textContent = footerData[langAttr].aby;
+             menu.textContent = footerData[langAttr].meu;
+             info.textContent = footerData[langAttr].info;
+             contact .textContent = footerData[langAttr].cnt;
+             boookings.textContent = footerData[langAttr].bkng;
+             privacyPolicy.textContent = footerData[langAttr].plan;
+             style.textContent = footerData[langAttr].guid;
+             license .textContent = footerData[langAttr].lic;
+             instruct.textContent = footerData[langAttr].instruct;
+             changelog.textContent = footerData[langAttr].log;
+             passwordGet.textContent = footerData[langAttr].paw;
+             number.textContent = footerData[langAttr].num;
+             charc.textContent = footerData[langAttr].charac;
+             latcafe.textContent = footerData[langAttr].latcafe;
+             buby.textContent = footerData[langAttr].buby;
+             webfl.textContent = footerData[langAttr].webfl;
  
-        //      titleLang.textContent = dataAboutUS[langAttr].headi;
-        //      DesciptLang1.textContent = dataAboutUS[langAttr].one;
-        //      DesciptLang2.textContent = dataAboutUS[langAttr].two;
-        //      DesciptLang3.textContent = dataAboutUS[langAttr].three;
-        //      DesciptLang4.textContent = dataAboutUS[langAttr].four;
-        //      DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
+             titleLang.textContent = dataAboutUS[langAttr].headi;
+             DesciptLang1.textContent = dataAboutUS[langAttr].one;
+             DesciptLang2.textContent = dataAboutUS[langAttr].two;
+             DesciptLang3.textContent = dataAboutUS[langAttr].three;
+             DesciptLang4.textContent = dataAboutUS[langAttr].four;
+             DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
  
-        //      langMenutitle.textContent = dataMenu[langAttr].menubtn;
-        //      langMenu1.textContent = dataMenu[langAttr].decript1;
-        //      langMenu2.textContent = dataMenu[langAttr].descript2;
-        //      langMenu3.textContent = dataMenu[langAttr].descript3;
-        //      btnFoodMenu.textContent = databtnMenu[langAttr].foodmenu;
-        //      btndrinkMenu.textContent = databtnMenu[langAttr].drinkmenu;
-        //      btntakeawayMenu.textContent = databtnMenu[langAttr].takeaway;
+             langMenutitle.textContent = dataMenu[langAttr].menubtn;
+             langMenu1.textContent = dataMenu[langAttr].decript1;
+             langMenu2.textContent = dataMenu[langAttr].descript2;
+             langMenu3.textContent = dataMenu[langAttr].descript3;
+             btnFoodMenu.textContent = databtnMenu[langAttr].foodmenu;
+             btndrinkMenu.textContent = databtnMenu[langAttr].drinkmenu;
+             btntakeawayMenu.textContent = databtnMenu[langAttr].takeaway;
  
-        //      locationtitle.textContent = dataLocationWorkDays[langAttr].loc;
-        //      locationCuba.textContent = dataLocationWorkDays[langAttr].addi1;
-        //      locationWellington.textContent = dataLocationWorkDays[langAttr].addi2;
-        //      hours.textContent = dataLocationWorkDays[langAttr].hor;
-        //      tueToFrid.textContent = dataLocationWorkDays[langAttr].tur;
-        //      dueDate.textContent = dataLocationWorkDays[langAttr].due;
-        //      satsun.textContent = dataLocationWorkDays[langAttr].satsun;
-        //      sunwork.textContent = dataLocationWorkDays[langAttr].sunwork;
-        //      monday.textContent = dataLocationWorkDays[langAttr].montitle;
-        //      closed.textContent = dataLocationWorkDays[langAttr].passagre1;
-        //      RR.textContent = dataLocationWorkDays[langAttr].passagre2;
+             locationtitle.textContent = dataLocationWorkDays[langAttr].loc;
+             locationCuba.textContent = dataLocationWorkDays[langAttr].addi1;
+             locationWellington.textContent = dataLocationWorkDays[langAttr].addi2;
+             hours.textContent = dataLocationWorkDays[langAttr].hor;
+             tueToFrid.textContent = dataLocationWorkDays[langAttr].tur;
+             dueDate.textContent = dataLocationWorkDays[langAttr].due;
+             satsun.textContent = dataLocationWorkDays[langAttr].satsun;
+             sunwork.textContent = dataLocationWorkDays[langAttr].sunwork;
+             monday.textContent = dataLocationWorkDays[langAttr].montitle;
+             closed.textContent = dataLocationWorkDays[langAttr].passagre1;
+             RR.textContent = dataLocationWorkDays[langAttr].passagre2;
  
-        //      awardwinnin.textContent = loremData[langAttr].award1;
-        //      cafeandBar.textContent = loremData[langAttr].award2;
-        //      lorem11.textContent = loremData[langAttr].lorem11;
-        //      lorem2.textContent = loremData[langAttr].lorem2;
-        //      lorem3.textContent = loremData[langAttr].lorem3;
-        //      lorem4.textContent = loremData[langAttr].lorem4;
-        //      lorem5.textContent = loremData[langAttr].lorem5;
-        //      lorem6.textContent = loremData[langAttr].lorem6;
-        //      lorem7.textContent = loremData[langAttr].lorem7; 
-        //  }
-        //  else {
-        //     // coffeeorderlang.textContent = ordeformMassive[langAttrRus].coffeeorder;
-        //     // drinkorderlang.textContent = ordeformMassive[langAttrRus].drink;
-        //     // selectdrinkorderlang.textContent = ordeformMassive[langAttrRus].selectdrink;
-        //     // americanoorderlang.textContent = ordeformMassive[langAttrRus].americano;
-        //     // mocha.textContent = ordeformMassive[langAttrRus].mocha;
-        //     // cappuccino.textContent = ordeformMassive[langAttrRus].cappuccino;
-        //     // espresso.textContent = ordeformMassive[langAttrRus].espresso;
-        //     // size.textContent = ordeformMassive[langAttrRus].size;
-        //     // selectsize.textContent = ordeformMassive[langAttrRus].selectsize;
-        //     // smallsize.textContent = ordeformMassive[langAttrRus].smallsize;
-        //     // mediumsize.textContent = ordeformMassive[langAttrRus].mediumsize;
-        //     // extra.textContent = ordeformMassive[langAttrRus].extra;
-        //     // name1.textContent = ordeformMassive[langAttrRus].name;
-        //     // placeorder.textContent = ordeformMassive[langAttrRus].placeorder;
-        //     // emails.textContent = ordeformMassive[langAttrRus].emails;
-        //     // regularsize.textContent = ordeformMassive[langAttrRus].regularsize;
+             awardwinnin.textContent = loremData[langAttr].award1;
+             cafeandBar.textContent = loremData[langAttr].award2;
+             lorem11.textContent = loremData[langAttr].lorem11;
+             lorem2.textContent = loremData[langAttr].lorem2;
+             lorem3.textContent = loremData[langAttr].lorem3;
+             lorem4.textContent = loremData[langAttr].lorem4;
+             lorem5.textContent = loremData[langAttr].lorem5;
+             lorem6.textContent = loremData[langAttr].lorem6;
+             lorem7.textContent = loremData[langAttr].lorem7; 
+         }
+         else {
+            coffeeorderlang.textContent = ordeformMassive[langAttrRus].coffeeorder;
+            drinkorderlang.textContent = ordeformMassive[langAttrRus].drink;
+            selectdrinkorderlang.textContent = ordeformMassive[langAttrRus].selectdrink;
+            americanoorderlang.textContent = ordeformMassive[langAttrRus].americano;
+            mocha.textContent = ordeformMassive[langAttrRus].mocha;
+            cappuccino.textContent = ordeformMassive[langAttrRus].cappuccino;
+            espresso.textContent = ordeformMassive[langAttrRus].espresso;
+            size.textContent = ordeformMassive[langAttrRus].size;
+            selectsize.textContent = ordeformMassive[langAttrRus].selectsize;
+            smallsize.textContent = ordeformMassive[langAttrRus].smallsize;
+            mediumsize.textContent = ordeformMassive[langAttrRus].mediumsize;
+            extra.textContent = ordeformMassive[langAttrRus].extra;
+            name1.textContent = ordeformMassive[langAttrRus].name;
+            placeorder.textContent = ordeformMassive[langAttrRus].placeorder;
+            emails.textContent = ordeformMassive[langAttrRus].emails;
+            regularsize.textContent = ordeformMassive[langAttrRus].regularsize;
 
 
 
 
 
-        //     // confirmlaang.textContent = confirmationForm[langAttrRus].confirmationheader;
-        //     // namelang.textContent = confirmationForm[langAttrRus].forlanguageUSer;
-        //     // passwordlang.textContent = confirmationForm[langAttrRus].passwordlang;
-        //     // submitlang.textContent = confirmationForm[langAttrRus].confirmMiddlebtn;
+            confirmlaang.textContent = confirmationForm[langAttrRus].confirmationheader;
+            namelang.textContent = confirmationForm[langAttrRus].forlanguageUSer;
+            passwordlang.textContent = confirmationForm[langAttrRus].passwordlang;
+            submitlang.textContent = confirmationForm[langAttrRus].confirmMiddlebtn;
 
 
-        //     contactme.textContent = footerArrays["russian"].footecontactme;
-        //     footeremail.textContent = footerArrays["russian"].footeremail;
-        //     footerphone.textContent = footerArrays["russian"].footerphonenumber;
-        //     footeraddress.textContent = footerArrays["russian"].footerlocation;
-        //     footergitHub.textContent = footerArrays["russian"].footergitHub;
-        //     console.log("russian");
+            contactme.textContent = footerArrays["russian"].footecontactme;
+            footeremail.textContent = footerArrays["russian"].footeremail;
+            footerphone.textContent = footerArrays["russian"].footerphonenumber;
+            footeraddress.textContent = footerArrays["russian"].footerlocation;
+            footergitHub.textContent = footerArrays["russian"].footergitHub;
+            console.log("russian");
 
 
-        // //     infoname.textContent = UserInformation[langAttrRus].fullnamesLS;
-        // //     userinfo.textContent = UserInformation[langAttrRus].userinformation;
-        // //     infopass.textContent = UserInformation[langAttrRus].passwordLS;
-        // //     infoemail.textContent = UserInformation[langAttrRus].modalemailLS;
-        // //     infocontact.textContent = UserInformation[langAttrRus].contactLS;
-        // //     birthinfo.textContent = UserInformation[langAttrRus].birthdayLS;
-        // //     resetbtn.textContent = UserInformation[langAttrRus].resetbtn;
-        // //     closebtn.textContent = UserInformation[langAttrRus].closebtn;
+            infoname.textContent = UserInformation[langAttrRus].fullnamesLS;
+            userinfo.textContent = UserInformation[langAttrRus].userinformation;
+            infopass.textContent = UserInformation[langAttrRus].passwordLS;
+            infoemail.textContent = UserInformation[langAttrRus].modalemailLS;
+            infocontact.textContent = UserInformation[langAttrRus].contactLS;
+            birthinfo.textContent = UserInformation[langAttrRus].birthdayLS;
+            resetbtn.textContent = UserInformation[langAttrRus].resetbtn;
+            closebtn.textContent = UserInformation[langAttrRus].closebtn;
 
 
 
-        // //     cred.textContent = credentials[langAttrRus].Creditals;
-        // //     userlogindetail.textContent = credentials[langAttrRus].userpeep;
-        // //     userlogout.textContent = credentials[langAttrRus].logoutIncon;
+            cred.textContent = credentials[langAttrRus].Creditals;
+            userlogindetail.textContent = credentials[langAttrRus].userpeep;
+            userlogout.textContent = credentials[langAttrRus].logoutIncon;
 
-        // //    createaccount.textContent = Container[langAttrRus].createaccount;
-        // //     usernamelable.textContent = Container[langAttrRus].usernameLable;
-        // //     errormessage.textContent = Container[langAttrRus].errormessage;
-        // //     birthdaylabel.textContent = Container[langAttrRus].birthdayLabel;
-        // //     contactLabel.textContent = Container[langAttrRus].contactLabel;
-        // //    emailLabel.textContent = Container[langAttrRus].emailLabel;
-        // //     passwordLabel.textContent = Container[langAttrRus].passwordLabel;
-        // //     upper.textContent = Container[langAttrRus].upper;
-        // //     lower.textContent = Container[langAttrRus].lower;
-        // //      special_char.textContent = Container[langAttrRus].special_char;
-        // //      number1.textContent = Container[langAttrRus].number;
-        // //      length.textContent = Container[langAttrRus].length;
-        // //      ConfirmPasswordLabel.textContent = Container[langAttrRus].ConfirmPasswordLAbel;
-        // //      Nickname.textContent = Container[langAttrRus].Nickname;
+           createaccount.textContent = Container[langAttrRus].createaccount;
+            usernamelable.textContent = Container[langAttrRus].usernameLable;
+            errormessage.textContent = Container[langAttrRus].errormessage;
+            birthdaylabel.textContent = Container[langAttrRus].birthdayLabel;
+            contactLabel.textContent = Container[langAttrRus].contactLabel;
+           emailLabel.textContent = Container[langAttrRus].emailLabel;
+            passwordLabel.textContent = Container[langAttrRus].passwordLabel;
+            upper.textContent = Container[langAttrRus].upper;
+            lower.textContent = Container[langAttrRus].lower;
+             special_char.textContent = Container[langAttrRus].special_char;
+             number1.textContent = Container[langAttrRus].number;
+             length.textContent = Container[langAttrRus].length;
+             ConfirmPasswordLabel.textContent = Container[langAttrRus].ConfirmPasswordLAbel;
+             Nickname.textContent = Container[langAttrRus].Nickname;
         
-        // // Accept.textContent = Container[langAttrRus].acceptButton;
-        // // Next.textContent = Container[langAttrRus].nextvalueButton;
-        // //     agree.textContent = Container[langAttrRus].agreement;
+        Accept.textContent = Container[langAttrRus].acceptButton;
+        Next.textContent = Container[langAttrRus].nextvalueButton;
+            agree.textContent = Container[langAttrRus].agreement;
 
-        // //      submit.textContent = Container[langAttrRus].submit;
-        // //      register.textContent = Container[langAttrRus].hey;
+             submit.textContent = Container[langAttrRus].submit;
+             register.textContent = Container[langAttrRus].hey;
 
           
 
@@ -1077,92 +1077,92 @@ passwordTransitionElement.style.color = "white";
 
 
 
-        // //     headerOrder.textContent = menList[langAttrRus].headerOrder;
-        // //     Entres.textContent = menList[langAttrRus].Entres;
-        // //     avocado.textContent = menList[langAttrRus].avocado;
-        // //     saratoga.textContent = menList[langAttrRus].saratoga;
-        // //     rocket.textContent = menList[langAttrRus].rocket;
-        // //     smoked.textContent = menList[langAttrRus].smoked;
-        // //     pepe.textContent = menList[langAttrRus].pepe;
-        // //     spaghetti.textContent = menList[langAttrRus].spaghetti;
-        // //     lobster.textContent = menList[langAttrRus].lobster;
-        // //     toast.textContent = menList[langAttrRus].toast;
-        // //     Mains.textContent = menList[langAttrRus].Mains;
-        // //     newyork.textContent = menList[langAttrRus].newyork;
-        // //     fiddlehands.textContent = menList[langAttrRus].fiddlehands;
-        // //     rosemary.textContent = menList[langAttrRus].rosemary;
-        // //     sauce.textContent = menList[langAttrRus].sauce;
-        // //     sea.textContent = menList[langAttrRus].sea;
-        // //     whitegreen.textContent = menList[langAttrRus].whitegreen;
-        // //     lemon.textContent = menList[langAttrRus].lemon;
-        // //     chcikenDuck.textContent = menList[langAttrRus].chcikenDuck;
-        // //     yukon.textContent = menList[langAttrRus].yukon;
-        // //     month.textContent = menList[langAttrRus].month;
-        // //     greenBeans.textContent = menList[langAttrRus].greenBeans;
+            headerOrder.textContent = menList[langAttrRus].headerOrder;
+            Entres.textContent = menList[langAttrRus].Entres;
+            avocado.textContent = menList[langAttrRus].avocado;
+            saratoga.textContent = menList[langAttrRus].saratoga;
+            rocket.textContent = menList[langAttrRus].rocket;
+            smoked.textContent = menList[langAttrRus].smoked;
+            pepe.textContent = menList[langAttrRus].pepe;
+            spaghetti.textContent = menList[langAttrRus].spaghetti;
+            lobster.textContent = menList[langAttrRus].lobster;
+            toast.textContent = menList[langAttrRus].toast;
+            Mains.textContent = menList[langAttrRus].Mains;
+            newyork.textContent = menList[langAttrRus].newyork;
+            fiddlehands.textContent = menList[langAttrRus].fiddlehands;
+            rosemary.textContent = menList[langAttrRus].rosemary;
+            sauce.textContent = menList[langAttrRus].sauce;
+            sea.textContent = menList[langAttrRus].sea;
+            whitegreen.textContent = menList[langAttrRus].whitegreen;
+            lemon.textContent = menList[langAttrRus].lemon;
+            chcikenDuck.textContent = menList[langAttrRus].chcikenDuck;
+            yukon.textContent = menList[langAttrRus].yukon;
+            month.textContent = menList[langAttrRus].month;
+            greenBeans.textContent = menList[langAttrRus].greenBeans;
 
-        // //     menuAbout.textContent = menuMenuArr[langAttrRus].menfirst;
-        // //     menuMenu.textContent = menuMenuArr[langAttrRus].mensecond;
-        // //     menuInfo.textContent = menuMenuArr[langAttrRus].menuthird;
-        // //     menuBooking.textContent = menuMenuArr[langAttrRus].menfourth;
-        // //     LatteCafeTitler.textContent = menuMenuArr[langAttrRus].lattecafe;
+            menuAbout.textContent = menuMenuArr[langAttrRus].menfirst;
+            menuMenu.textContent = menuMenuArr[langAttrRus].mensecond;
+            menuInfo.textContent = menuMenuArr[langAttrRus].menuthird;
+            menuBooking.textContent = menuMenuArr[langAttrRus].menfourth;
+            LatteCafeTitler.textContent = menuMenuArr[langAttrRus].lattecafe;
 
-        // //     mapLocation.textContent = MapLocation[langAttrRus].font;
+            mapLocation.textContent = MapLocation[langAttrRus].font;
 
-        // //     home.textContent = footerData[langAttrRus].em;
-        // //     about.textContent = footerData[langAttrRus].aby;
-        // //     menu.textContent = footerData[langAttrRus].meu;
-        // //     info.textContent = footerData[langAttrRus].info;
-        // //     contact .textContent = footerData[langAttrRus].cnt;
-        // //     boookings.textContent = footerData[langAttrRus].bkng;
-        // //     privacyPolicy.textContent = footerData[langAttrRus].plan;
-        // //     style.textContent = footerData[langAttrRus].guid;
-        // //     license .textContent = footerData[langAttrRus].lic;
-        // //     instruct.textContent = footerData[langAttrRus].instruct;
-        // //     changelog.textContent = footerData[langAttrRus].log;
-        // //     passwordGet.textContent = footerData[langAttrRus].paw;
-        // //     number.textContent = footerData[langAttrRus].num;
-        // //     charc.textContent = footerData[langAttrRus].charac;
-        // //     latcafe.textContent = footerData[langAttrRus].latcafe;
-        // //     buby.textContent = footerData[langAttrRus].buby;
-        // //     webfl.textContent = footerData[langAttrRus].webfl;
+            home.textContent = footerData[langAttrRus].em;
+            about.textContent = footerData[langAttrRus].aby;
+            menu.textContent = footerData[langAttrRus].meu;
+            info.textContent = footerData[langAttrRus].info;
+            contact .textContent = footerData[langAttrRus].cnt;
+            boookings.textContent = footerData[langAttrRus].bkng;
+            privacyPolicy.textContent = footerData[langAttrRus].plan;
+            style.textContent = footerData[langAttrRus].guid;
+            license .textContent = footerData[langAttrRus].lic;
+            instruct.textContent = footerData[langAttrRus].instruct;
+            changelog.textContent = footerData[langAttrRus].log;
+            passwordGet.textContent = footerData[langAttrRus].paw;
+            number.textContent = footerData[langAttrRus].num;
+            charc.textContent = footerData[langAttrRus].charac;
+            latcafe.textContent = footerData[langAttrRus].latcafe;
+            buby.textContent = footerData[langAttrRus].buby;
+            webfl.textContent = footerData[langAttrRus].webfl;
 
-        // //     titleLang.textContent = dataAboutUS[langAttrRus].headi;
-        // //     DesciptLang1.textContent = dataAboutUS[langAttrRus].one;
-        // //     DesciptLang2.textContent = dataAboutUS[langAttrRus].two;
-        // //     DesciptLang3.textContent = dataAboutUS[langAttrRus].three;
-        // //     DesciptLang4.textContent = dataAboutUS[langAttrRus].four;
-        // //     DesciptLang5.textContent = dataAboutUS[langAttrRus].fifth;
+            titleLang.textContent = dataAboutUS[langAttrRus].headi;
+            DesciptLang1.textContent = dataAboutUS[langAttrRus].one;
+            DesciptLang2.textContent = dataAboutUS[langAttrRus].two;
+            DesciptLang3.textContent = dataAboutUS[langAttrRus].three;
+            DesciptLang4.textContent = dataAboutUS[langAttrRus].four;
+            DesciptLang5.textContent = dataAboutUS[langAttrRus].fifth;
 
-        // //     langMenutitle.textContent = dataMenu[langAttrRus].menubtn;
-        // //     langMenu1.textContent = dataMenu[langAttrRus].decript1;
-        // //     langMenu2.textContent = dataMenu[langAttrRus].descript2;
-        // //     langMenu3.textContent = dataMenu[langAttrRus].descript3;
-        // //     btnFoodMenu.textContent = databtnMenu[langAttrRus].foodmenu;
-        // //     btndrinkMenu.textContent = databtnMenu[langAttrRus].drinkmenu;
-        // //     btntakeawayMenu.textContent = databtnMenu[langAttrRus].takeaway;
+            langMenutitle.textContent = dataMenu[langAttrRus].menubtn;
+            langMenu1.textContent = dataMenu[langAttrRus].decript1;
+            langMenu2.textContent = dataMenu[langAttrRus].descript2;
+            langMenu3.textContent = dataMenu[langAttrRus].descript3;
+            btnFoodMenu.textContent = databtnMenu[langAttrRus].foodmenu;
+            btndrinkMenu.textContent = databtnMenu[langAttrRus].drinkmenu;
+            btntakeawayMenu.textContent = databtnMenu[langAttrRus].takeaway;
 
-        // //     locationtitle.textContent = dataLocationWorkDays[langAttrRus].loc;
-        // //     locationCuba.textContent = dataLocationWorkDays[langAttrRus].addi1;
-        // //     locationWellington.textContent = dataLocationWorkDays[langAttrRus].addi2;
-        // //     hours.textContent = dataLocationWorkDays[langAttrRus].hor;
-        // //     tueToFrid.textContent = dataLocationWorkDays[langAttrRus].tur;
-        // //     dueDate.textContent = dataLocationWorkDays[langAttrRus].due;
-        // //     satsun.textContent = dataLocationWorkDays[langAttrRus].satsun;
-        // //     sunwork.textContent = dataLocationWorkDays[langAttrRus].sunwork;
-        // //     monday.textContent = dataLocationWorkDays[langAttrRus].montitle;
-        // //     closed.textContent = dataLocationWorkDays[langAttrRus].passagre1;
-        // //     RR.textContent = dataLocationWorkDays[langAttrRus].passagre2;
+            locationtitle.textContent = dataLocationWorkDays[langAttrRus].loc;
+            locationCuba.textContent = dataLocationWorkDays[langAttrRus].addi1;
+            locationWellington.textContent = dataLocationWorkDays[langAttrRus].addi2;
+            hours.textContent = dataLocationWorkDays[langAttrRus].hor;
+            tueToFrid.textContent = dataLocationWorkDays[langAttrRus].tur;
+            dueDate.textContent = dataLocationWorkDays[langAttrRus].due;
+            satsun.textContent = dataLocationWorkDays[langAttrRus].satsun;
+            sunwork.textContent = dataLocationWorkDays[langAttrRus].sunwork;
+            monday.textContent = dataLocationWorkDays[langAttrRus].montitle;
+            closed.textContent = dataLocationWorkDays[langAttrRus].passagre1;
+            RR.textContent = dataLocationWorkDays[langAttrRus].passagre2;
 
-        // //     awardwinnin.textContent = loremData[langAttrRus].award1;
-        // //     cafeandBar.textContent = loremData[langAttrRus].award2;
-        // //     lorem11.textContent = loremData[langAttrRus].lorem11;
-        // //     lorem2.textContent = loremData[langAttrRus].lorem2;
-        // //     lorem3.textContent = loremData[langAttrRus].lorem3;
-        // //     lorem4.textContent = loremData[langAttrRus].lorem4;
-        // //     lorem5.textContent = loremData[langAttrRus].lorem5;
-        // //     lorem6.textContent = loremData[langAttrRus].lorem6;
-        // //     lorem7.textContent = loremData[langAttrRus].lorem7; 
-        //  }
+            awardwinnin.textContent = loremData[langAttrRus].award1;
+            cafeandBar.textContent = loremData[langAttrRus].award2;
+            lorem11.textContent = loremData[langAttrRus].lorem11;
+            lorem2.textContent = loremData[langAttrRus].lorem2;
+            lorem3.textContent = loremData[langAttrRus].lorem3;
+            lorem4.textContent = loremData[langAttrRus].lorem4;
+            lorem5.textContent = loremData[langAttrRus].lorem5;
+            lorem6.textContent = loremData[langAttrRus].lorem6;
+            lorem7.textContent = loremData[langAttrRus].lorem7; 
+         }
       
       
         

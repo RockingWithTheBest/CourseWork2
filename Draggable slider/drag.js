@@ -82,3 +82,52 @@ const imgEx = document.querySelector(".ex-catalog");
 imgEx.addEventListener("click", () =>{
     window.history.back(); 
 });
+
+
+const getValue = localStorage.getItem("Is_Language");
+console.log(getValue);
+const susageValue  =  document.querySelector(".suasage");
+const cuisineValue = document.querySelector(".cuisine");
+const pelmeniValue = document.querySelector(".pelmeni");
+const fruit = document.querySelector(".fruit");
+const meatValue = document.querySelector( ".beef");
+const russianorn = document.querySelector(".russianorn");
+
+
+var ArrayFodd= {
+    "english":{
+        "suasage":"Suasage",
+        "cuisine":"Cuisine",
+        "pelmeni":"Pelmeni",
+        "fruit":"Fruit Salad",
+        "meat":"Beef Meat",
+        "russianorn":"Russian Corn"
+    },
+    "russian":{
+        "suasage":"Соссиски",
+        "cuisine":"Курсини",
+        "pelmeni":"Пелмени",
+        "fruit":"Фуктовая салат",
+        "meat":"Мясо",
+        "russianorn":"Кукуруза"
+    }
+}
+if(getValue === "russian"){
+    susageValue.textContent = ArrayFodd["russian"].suasage;
+    cuisineValue.textContent = ArrayFodd["russian"].cuisine;
+    pelmeniValue.textContent = ArrayFodd["russian"].pelmeni;
+    fruit.textContent = ArrayFodd["russian"].fruit;
+    meatValue.textContent = ArrayFodd["russian"].meat;
+    russianorn.textContent = ArrayFodd["russian"].russianorn;
+
+}
+else if (getValue === "russian"){
+    susageValue.textContent = ArrayFodd["english"].suasage;
+    cuisineValue.textContent = ArrayFodd["english"].cuisine;
+    pelmeniValue.textContent = ArrayFodd["english"].pelmeni;
+    fruit.textContent = ArrayFodd["english"].fruit;
+    meatValue.textContent = ArrayFodd["english"].meat;
+    russianorn.textContent = ArrayFodd["english"].russianorn;
+
+}
+

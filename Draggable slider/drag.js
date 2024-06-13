@@ -92,6 +92,7 @@ const pelmeniValue = document.querySelector(".pelmeni");
 const fruit = document.querySelector(".fruit");
 const meatValue = document.querySelector( ".beef");
 const russianorn = document.querySelector(".russianorn");
+const exit = document.querySelector(".btn");
 
 
 var ArrayFodd= {
@@ -101,7 +102,8 @@ var ArrayFodd= {
         "pelmeni":"Pelmeni",
         "fruit":"Fruit Salad",
         "meat":"Beef Meat",
-        "russianorn":"Russian Corn"
+        "russianorn":"Russian Corn",
+        "btn":"Exit"
     },
     "russian":{
         "suasage":"Соссиски",
@@ -109,7 +111,8 @@ var ArrayFodd= {
         "pelmeni":"Пелмени",
         "fruit":"Фуктовая салат",
         "meat":"Мясо",
-        "russianorn":"Кукуруза"
+        "russianorn":"Кукуруза",
+          "btn":"Выход"
     }
 }
 if(getValue === "russian"){
@@ -119,9 +122,11 @@ if(getValue === "russian"){
     fruit.textContent = ArrayFodd["russian"].fruit;
     meatValue.textContent = ArrayFodd["russian"].meat;
     russianorn.textContent = ArrayFodd["russian"].russianorn;
+    exit.textContent = ArrayFodd["russian"].btn;
 
 }
 else if (getValue === "russian"){
+    exit.textContent = ArrayFodd["btn"].btn;
     susageValue.textContent = ArrayFodd["english"].suasage;
     cuisineValue.textContent = ArrayFodd["english"].cuisine;
     pelmeniValue.textContent = ArrayFodd["english"].pelmeni;
@@ -129,5 +134,36 @@ else if (getValue === "russian"){
     meatValue.textContent = ArrayFodd["english"].meat;
     russianorn.textContent = ArrayFodd["english"].russianorn;
 
+}
+
+
+const getTheme = localStorage.getItem("theme");
+if (getTheme === "dark"){
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card=>{
+        card.style.background = "black";
+    });
+    const header = document.querySelectorAll("h2")
+    header.forEach(head=>{
+        head.style.color = "white";
+    });
+
+    const btn = document.querySelector(".ex-catalog");
+    btn.style.background = "black";
+    document.querySelector(".btn").style.color = "white";
+}
+else if (getTheme === "light"){
+    const cards = document.querySelectorAll(".card");
+    cards.forEach(card=>{
+        card.style.background = "white";
+    });
+    const header = document.querySelectorAll("h2")
+    header.forEach(head=>{
+        head.style.color = "black";
+    });
+
+    const btn = document.querySelector(".ex-catalog");
+    btn.style.background = "white";
+    document.querySelector(".btn").style.color = "black";
 }
 

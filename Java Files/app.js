@@ -484,7 +484,7 @@ passwordTransitionElement.style.color = "white";
         var confirmationForm = {
             "russian" : {
                 "confirmationheader":"Подтверждение",
-                "forlanguageUSer": "Имя пользователя",
+                "forlanguageUSer": "Имя",
                 "passwordlang":"Пароль",
                 "confirmMiddlebtn":"Отправки"
             },

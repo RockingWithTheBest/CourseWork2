@@ -18,7 +18,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to left top, #031A9A, #8B53FF);
+    background: linear-gradient(94deg, #0b0610db, transparent);
     padding: 0 35px;
     flex-direction: column-reverse;
 }

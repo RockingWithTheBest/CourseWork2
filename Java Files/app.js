@@ -846,6 +846,7 @@ confirmOrderButton.addEventListener('click',() =>{
        container6.classList.remove('hidden');
        container7.classList.remove('hidden');
        container8.classList.remove('hidden');
+       document.querySelector(".container99").classList.remove('hidden');
     
 
     }

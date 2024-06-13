@@ -1,5 +1,6 @@
 document.querySelector(".user").addEventListener("click", ()=>{
     document.querySelector(".container99").classList.add("hidden");
+    document.querySelector(".form").classList.remove('hidden');
 });
 document.querySelector("#exitReg").addEventListener("click", ()=>{
     container1.classList.remove('hidden');
@@ -22,10 +23,22 @@ document.querySelector("#exitConfirm").addEventListener("click", ()=>{
     container6.classList.remove('hidden');   
     container7.classList.remove('hidden');
     container8.classList.remove('hidden');
-   // document.querySelector(".container99").classList.remove('hidden');
+    document.querySelector(".container99").classList.remove('hidden');
     document.querySelector("#password-transition").classList.add('hidden');
 });
-
+// const create = document.querySelector(".user")
+// create.addEventListener('click',() =>{
+//     container1.classList.remove('hidden');
+//     container2.classList.remove('hidden');
+//     container3.classList.remove('hidden');
+//     container4.classList.remove('hidden');
+//     container5.classList.remove('hidden');
+//     container6.classList.remove('hidden');   
+//     container7.classList.remove('hidden');
+//     container8.classList.remove('hidden');
+//     document.querySelector(".container99").classList.remove('hidden');
+//     document.querySelector("#container").classList.add('hidden');
+// }
 
 
 let btn = document.getElementById("btn");
@@ -1642,6 +1655,7 @@ cancelOrderButton.addEventListener('click',() =>{
                     container6.classList.add('hidden');
                     container7.classList.add('hidden');
                     container8.classList.add('hidden');
+                    document.querySelector(".container99").classList.add('hidden');
                     passwordConfirmForm_where_to_apply.classList.remove('hidden'); 
                 }
             }

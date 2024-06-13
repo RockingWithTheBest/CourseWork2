@@ -550,6 +550,13 @@ div#container {
     background-color: var(--background-color);
     color: var(--text-color);
 } 
+.dark-theme  #password-transition{
+    --background-color: #000;
+    --text-color:white;
+    --title-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
+} 
 .dark-theme .footer{
     --background-color: #000;
     --text-color:white;

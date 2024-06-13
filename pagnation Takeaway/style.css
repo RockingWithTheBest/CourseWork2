@@ -1,0 +1,261 @@
+.carousel {
+    position: relative;
+    width: 392px;
+    height: 548px;
+    overflow: hidden;
+ 
+}
+button.exit-btn {
+  font-size: 17px;
+  width: 104px;
+  height: 38px;
+  border-radius: 9px;
+  background: #516777;
+  border: 2px solid #fff;
+  font-family: Inter;
+  font-style: normal;
+  color: #fff;
+  margin-top: 24px;
+}
+body {
+  background: linear-gradient(94deg, #0b0610db, transparent);
+}
+.exit-btn:hover{
+  border: 2px solid #3a3434;
+  background: #fff;
+  cursor: pointer;
+  color: black;
+}
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-family: Inter;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .object {
+    top: 136px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-image {
+    width: 392px;
+    height: 392px;
+    object-fit: cover;
+}
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 438px;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    left: -19px;
+}
+  
+  .carousel-controls button {
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 768px){
+    .carousel-image {
+      width: 308px;
+      height: 341px;
+      object-fit: cover;
+  }
+  .carousel-controls {
+    position: absolute;
+    top: 394px;
+
+    width: 78%;
+ 
+    left: -19px;
+}
+.carousel {
+  position: relative;
+  width: 392px;
+  height: 548px;
+  overflow: hidden;
+  left: 52px;
+}
+button.exit-btn {
+  width: 94px;
+  height: 34px;
+  border-radius: 9px;
+  background: #516777;
+  border: 2px solid #fff;
+  font-family: Inter;
+  font-style: normal;
+  color: #fff;
+  margin-top: 24px;
+  position: relative;
+  top: -67px;
+  left: 15px;
+  font-size: 15px;
+}
+.carousel-caption {
+  position: relative;
+
+  top: 93px;
+  width: 73%;
+
+}
+
+  
+  }
+
+  @media  screen and (max-width: 414px){
+    .carousel-image {
+      width: 222px;
+      height: 196px;
+      object-fit: cover;
+  }
+  .object {
+    top: 136px;
+    position: relative;
+    display: block;
+
+}
+.carousel {
+  position: fixed;
+  width: 341px;
+  height: 548px;
+  overflow: hidden;
+  left: 99px;
+}
+  .carousel-controls {
+    position: absolute;
+    top: 298px;
+    width: 64%;
+    left: -19px;
+}
+.carousel-caption {
+  position: relative;
+  top: 17px;
+  width: 59%;
+  font-size: 13px;
+  font-family: Inter;
+}
+button.exit-btn {
+  width: 80px;
+  height: 31px;
+  font-family: Inter;
+  color: #fff;
+  margin-top: 24px;
+  position: fixed;
+  top: 461px;
+  left: 169px;
+  font-size: 15px;
+}
+
+}   
+@media screen and (max-width: 399px) {
+  .carousel {
+    position: fixed;
+    width: 341px;
+    height: 548px;
+    overflow: hidden;
+    left: 83px;
+}
+button.exit-btn {
+  width: 80px;
+  height: 31px;
+  font-family: Inter;
+  color: #fff;
+  margin-top: 24px;
+  position: fixed;
+  top: 458px;
+  left: 155px;
+  font-size: 15px;
+}
+}
+@media screen and (max-width: 372px) {
+  .carousel {
+    position: fixed;
+    width: 341px;
+    height: 548px;
+    overflow: hidden;
+    left: 72px;
+}
+button.exit-btn {
+  width: 80px;
+  height: 31px;
+  font-family: Inter;
+  color: #fff;
+  margin-top: 24px;
+  position: fixed;
+  top: 458px;
+  left: 142px;
+  font-size: 15px;
+}
+}
+@media screen and (max-width: 355px) {
+  .carousel {
+    position: fixed;
+    width: 341px;
+    height: 548px;
+    overflow: hidden;
+    left: 62px;
+}
+button.exit-btn {
+  width: 80px;
+  height: 31px;
+  font-family: Inter;
+  color: #fff;
+  margin-top: 24px;
+  position: fixed;
+  top: 457px;
+  left: 134px;
+  font-size: 15px;
+}
+}
+@media screen and (max-width: 331px) {
+  .carousel {
+    position: fixed;
+    width: 341px;
+    height: 548px;
+    overflow: hidden;
+    left: 52px;
+}
+button.exit-btn {
+  width: 80px;
+  height: 31px;
+  font-family: Inter;
+  color: #fff;
+  margin-top: 24px;
+  position: fixed;
+  top: 457px;
+  left: 124px;
+  font-size: 15px;
+}
+}
+  

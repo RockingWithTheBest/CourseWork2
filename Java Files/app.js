@@ -1,3 +1,10 @@
+const burgerMenu = document.querySelector('.collect');
+burgerMenu.addEventListener( "click",function(){
+   burgerMenu.classList.toggle('open');
+});
+
+
+
 document.querySelector(".user").addEventListener("click", ()=>{
     document.querySelector(".container99").classList.add("hidden");
     document.querySelector(".form").classList.remove('hidden');
@@ -1836,7 +1843,6 @@ cancelOrderButton.addEventListener('click',() =>{
 
 
 
- catalogMain.classList.add('hidden');
  const imgEx = document.querySelector("#imgEx").classList.add('hidden');
 //  const container1 = document.querySelector('.container11');
 //  const container2 = document.querySelector('.container22');
@@ -1943,11 +1949,6 @@ cancelOrderButton.addEventListener('click',() =>{
 // });
 
 
- const burgerMenu =document.querySelector('.collect');
- burgerMenu.addEventListener( "click",function(){
-    burgerMenu.classList.toggle('open');
- });
- 
 
 
  document.querySelector('.user').addEventListener( 'click',()=>{

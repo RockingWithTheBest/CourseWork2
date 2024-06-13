@@ -63,7 +63,7 @@ var ArrayValues = {
 
 console.log(getValue);
 if(getValue === "russian"){
-  value.textContent = ArrayValues["russian"].black;
+  document.querySelector(".black").textContent = ArrayValues["russian"].black;
   document.querySelector(".btn").textContent = ArrayValues["russian"].btn;
   document.querySelector(".regularcapo").textContent = ArrayValues["russian"].regularcapo;
   document.querySelector(".cappucinospeC").textContent = ArrayValues["russian"].cappucinospeC;

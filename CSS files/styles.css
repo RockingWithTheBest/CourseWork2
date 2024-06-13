@@ -5667,3 +5667,58 @@ h10 {
         scroll-behavior: smooth;
     }
  }
+
+
+
+ @media screen and (max-width: 514px){
+    img#exitPurchase {
+        width: 21px;
+        border-radius: 20%;
+        position: relative;
+        left: 434px;
+        top: -75px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 477px){
+    img#exitPurchase {
+        width: 21px;
+        border-radius: 20%;
+        position: relative;
+        left: 386px;
+        top: -75px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 431px) {
+    img#exitPurchase {
+        width: 21px;
+        border-radius: 20%;
+        position: relative;
+        left: 348px;
+        top: -75px;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 393px){
+    .later-header h3 {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-style: italic;
+        color: #d36969;
+        position: relative;
+        top: 10px;
+    }
+    img#exitPurchase {
+        width: 21px;
+        border-radius: 20%;
+        position: relative;
+        left: 7px;
+        top: -57px;
+        cursor: pointer;
+    }
+}

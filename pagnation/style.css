@@ -171,9 +171,9 @@ button.exit-btn {
   font-family: Inter;
   color: #fff;
   margin-top: 24px;
-  position: relative;
-  top: 312px;
-  left: 162px;
+  position: fixed;
+  top: 461px;
+  left: 169px;
   font-size: 15px;
 }
 

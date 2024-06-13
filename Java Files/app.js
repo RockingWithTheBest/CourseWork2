@@ -1599,36 +1599,8 @@ document.querySelector('.collect-exit').addEventListener( 'click',()=>{
     console.log("background")
 });
 
-document.querySelector('.collect-exit-takeaway').addEventListener('click', ()=>{
-    document.querySelector('#takeaway-display').classList.add('hidden');
 
-    container1.classList.remove('hidden');
-    container2.classList.remove('hidden');
-    container3.classList.remove('hidden');
-    container4.classList.remove('hidden');
-    container5.classList.remove('hidden');
-    container6.classList.remove('hidden');
-    container7.classList.remove('hidden');
-    container8.classList.remove('hidden');
-    document.querySelector('.container99').classList.remove('hidden'); 
 
-    document.querySelector('body').style.background = "none";  
-}) 
-document.querySelector('.takeaway').addEventListener('click', ()=>{  
-    container1.classList.add('hidden');
-    container2.classList.add('hidden');
-    container3.classList.add('hidden');
-    container4.classList.add('hidden');
-    container5.classList.add('hidden');
-    container6.classList.add('hidden');
-    container7.classList.add('hidden');
-    container8.classList.add('hidden');
-    document.querySelector('.container99').classList.add('hidden'); 
-
-    document.querySelector("#takeaway-display").classList.remove('hidden');
-    document.querySelector('body').style.background = "#28283f";
-
-  });
 
 //SLIDDER>> << JS BEGIN
 const carouselItems = document.querySelectorAll('.carousel-item');

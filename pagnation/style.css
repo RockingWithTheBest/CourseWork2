@@ -192,9 +192,9 @@ button.exit-btn {
   font-family: Inter;
   color: #fff;
   margin-top: 24px;
-  position: relative;
-  top: 312px;
-  left: 145px;
+  position: fixed;
+  top: 458px;
+  left: 155px;
   font-size: 15px;
 }
 }
@@ -212,9 +212,9 @@ button.exit-btn {
   font-family: Inter;
   color: #fff;
   margin-top: 24px;
-  position: relative;
-  top: 312px;
-  left: 136px;
+  position: fixed;
+  top: 458px;
+  left: 142px;
   font-size: 15px;
 }
 }
@@ -232,9 +232,9 @@ button.exit-btn {
   font-family: Inter;
   color: #fff;
   margin-top: 24px;
-  position: relative;
-  top: 312px;
-  left: 126px;
+  position: fixed;
+  top: 457px;
+  left: 134px;
   font-size: 15px;
 }
 }
@@ -252,9 +252,9 @@ button.exit-btn {
   font-family: Inter;
   color: #fff;
   margin-top: 24px;
-  position: relative;
-  top: 312px;
-  left: 116px;
+  position: fixed;
+  top: 457px;
+  left: 124px;
   font-size: 15px;
 }
 }

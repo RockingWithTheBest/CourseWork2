@@ -1,0 +1,120 @@
+.carousel {
+    position: relative;
+    width: 392px;
+    height: 548px;
+    overflow: hidden;
+    top: 77px;
+    left: 538px;
+}
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .carousel-image {
+    width: 392px;
+    height: 392px;
+    object-fit: cover;
+}
+  
+  .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .carousel-controls {
+    position: absolute;
+    top: 438px;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    left: -19px;
+}
+  
+  .carousel-controls button {
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 748px){
+    .carousel {
+        position: relative;
+        width: 392px;
+        height: 548px;
+        overflow: hidden;
+        top: 77px;
+        left: 182px;
+    }
+  }
+
+  @media  screen and (max-width: 320px){
+    .carousel-image {
+        width: 282px;
+        height: 233px;
+        object-fit: cover;
+        position: relative;
+        left: 36px;
+        top: 122px;
+    }
+    .carousel {
+        position: relative;
+        width: 365px;
+        height: 548px;
+        overflow: hidden;
+        top: 77px;
+        left: -16px;
+    }
+    .carousel-image {
+        width: 282px;
+        height: 233px;
+        object-fit: cover;
+        position: relative;
+        left: 46px;
+        top: 122px;
+    }
+    .carousel-controls {
+        position: absolute;
+        top: 438px;
+        transform: translateY(-50%);
+        width: 84%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        left: 9px;
+    }
+    .carousel-caption {
+        position: absolute;
+        bottom: 0;
+        left: 39px;
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+  }   
+  

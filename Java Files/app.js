@@ -1441,7 +1441,6 @@ cancelOrderButton.addEventListener('click',() =>{
 
 
 
- const fooodMenuBtn = document.querySelector(".foodmenu");
  const catalogMain = document.querySelector("#bodyCata");
  catalogMain.classList.add('hidden');
  const imgEx = document.querySelector("#imgEx").classList.add('hidden');
@@ -1530,24 +1529,24 @@ cancelOrderButton.addEventListener('click',() =>{
 
 
 
-document.querySelector('.drinkmenu').addEventListener('click',()=>{
-    document.querySelector('.carousel').classList.remove('hidden');
+// document.querySelector('.drinkmenu').addEventListener('click',()=>{
+//     document.querySelector('.carousel').classList.remove('hidden');
 
-    container1.classList.add('hidden');
-    container2.classList.add('hidden');
-    container3.classList.add('hidden');
-    container4.classList.add('hidden');
-    container5.classList.add('hidden');
-    container6.classList.add('hidden');
-    container7.classList.add('hidden');
-    container8.classList.add('hidden');
-    document.querySelector('.container99').classList.add('hidden'); 
+//     container1.classList.add('hidden');
+//     container2.classList.add('hidden');
+//     container3.classList.add('hidden');
+//     container4.classList.add('hidden');
+//     container5.classList.add('hidden');
+//     container6.classList.add('hidden');
+//     container7.classList.add('hidden');
+//     container8.classList.add('hidden');
+//     document.querySelector('.container99').classList.add('hidden'); 
 
-    document.querySelector("#carousel").classList.remove('hidden');
-    document.querySelector('body').style.background = "#28283f";
+//     document.querySelector("#carousel").classList.remove('hidden');
+//     document.querySelector('body').style.background = "#28283f";
     
  
-});
+// });
 
 
  const burgerMenu =document.querySelector('.collect');
@@ -1575,13 +1574,7 @@ document.querySelector('.drinkmenu').addEventListener('click',()=>{
  });
 
 
- document.querySelector('.foodmenu').addEventListener( 'click',()=>{ 
-    document.querySelector('#imgEx').classList.remove('hidden'); 
-    document.querySelector('#bodyCata').classList.remove('hidden'); 
-    document.querySelector('.wrapperCatalog').classList.remove('hidden');
-    
-    document.querySelector('.container99').classList.add('hidden');
-  })
+ 
 
   document.querySelector('.hey').addEventListener( 'click',()=>{
 

@@ -34,3 +34,7 @@ firstButton .addEventListener('click', () => {
     currentIndex = 0;
     showItem(currentIndex);
 });
+
+document.querySelector(".exit-btn").addEventListener('click', () => {
+  window.history.back();
+});

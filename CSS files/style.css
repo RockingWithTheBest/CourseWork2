@@ -215,16 +215,6 @@ button#close-btn {
     height: 45px;
 }
 
-@media screen and (max-width: 390px) {
-    img#exitPurchase {
-        width: 21px;
-        border-radius: 20%;
-        position: relative;
-        left: 323px;
-        top: -75px;
-        cursor: pointer;
-    }
-}
 
 /* @media screen and (max-width: 320px) {
     .carousel .card {

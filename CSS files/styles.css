@@ -5722,3 +5722,95 @@ h10 {
         cursor: pointer;
     }
 }
+@media screen and (max-width: 376px) {
+    input#email {
+        width: 272px;
+        height: 45px;
+        margin-bottom: 10px;
+        position: relative;
+        left: 17px;
+    }
+}
+@media screen and (max-width: 364px) {
+    input#extra, input#name {
+        margin-bottom: 13px;
+        border-radius: 4px;
+        height: 42px;
+        width: 199px;
+        border: 2px solid white;
+        position: relative;
+        left: 19px;
+    }
+    input#email {
+        width: 200px;
+        height: 45px;
+        margin-bottom: 10px;
+        position: relative;
+        left: -36px;
+        top: 23px;
+    }
+   .emails {
+        position: relative;
+        top: -17px;
+    }
+    .placeorder {
+        color: white;
+        height: 37px;
+        border-radius: 18px;
+        background-color: #c36e66;
+        cursor: pointer;
+        font-family: Roboto Condensed;
+        font-style: italic;
+        margin-top: 33px;
+    }
+}
+@media screen and (max-width: 362px) {
+    .placeorder {
+        color: white;
+        height: 37px;
+        border-radius: 18px;
+        background-color: #c36e66;
+        cursor: pointer;
+        font-family: Roboto Condensed;
+        font-style: italic;
+        margin-top: 33px;
+    }
+    input#email {
+        width: 200px;
+        height: 45px;
+        margin-bottom: 10px;
+        position: relative;
+        left: 18px;
+        top: 23px;
+    }
+    .emails {
+        position: relative;
+        top: 6px;
+    }
+}
+@media screen and (max-width: 341px) {
+    select#size {
+        margin-bottom: 60px;
+        border-radius: 4px;
+        width: 200px;
+        height: 40px;
+        font-family: Roboto Condensed;
+        position: relative;
+        left: 20px;
+        top: 18px;
+    }
+    select#drink {
+        margin-bottom: 13px;
+        border-radius: 4px;
+        width: 198px;
+        height: 40px;
+        font-family: Roboto Condensed;
+        position: relative;
+        left: 21px;
+    }
+    label#size {
+        position: relative;
+        top: -2px;
+        left: -3px;
+    }
+}

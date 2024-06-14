@@ -409,6 +409,7 @@ passwordTransitionElement.style.color = "white";
                 DesciptLang3.textContent = dataAboutUS[langAttr].three;
                 DesciptLang4.textContent = dataAboutUS[langAttr].four;
                 DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
+                document.querySelector('.sixth').textContent = dataAboutUS[langAttr].sixth;
 
                 langMenutitle.textContent = dataMenu[langAttr].menubtn;
                 langMenu1.textContent = dataMenu[langAttr].decript1;
@@ -802,18 +803,39 @@ passwordTransitionElement.style.color = "white";
                 "two":"local neighbourhood cafe and bar. Latte is all about doing",   
                 "three":"what we love, in a city that we love. We keep stocked", 
                 "four":"with local produce and pastries. Bring your family for a", 
-                "fifth":"bite, or meet your friends for a coffee or warm drink."   
+                "fifth":"bite, or meet your friends for a coffee or warm drink." ,
+                
             },
             "russian":{
                 "headi":"O нас",
                 "one": "Кафе Латте, расположенное на углу Веллингтона, представляет собой",
-                "two":"местное кафе и бар по соседству. Латте - это все, что нужно для приготовления",   
-                "three":"то, что мы любим, в городе, который мы любим. У нас есть запас", 
-                "four":"с местными продуктами и выпечкой. Приходите всей семьей на", 
-                "fifth":"перекусите или встретьтесь с друзьями за чашечкой кофе или теплого напитка."  
+                "two":"местное кафе и бар по соседству. Латте-это все, что нужно для",   
+                "three":"приготовления то, что мы любим, в городе, который мы любим.У нас есть", 
+                "four":"запас с местными продуктами и выпечкой. Приходите всей семьей на", 
+                "fifth":"перекусите и встретьтесь с друзьями за чашечкой кофе или напитка.",
+                "sixth":""  
             }
         }
 
+
+        if(localStorage.getItem("theme")==="dark"&& localStorage.getItem("Is_Language")==="russian"){
+            document.querySelector('.two-p').style.position = "relative";
+            document.querySelector('.two-p').style.left = "0px";
+
+            document.querySelector('.three-p').style.position = "relative";
+            document.querySelector('.three-p').style.left = "-3px";
+
+            document.querySelector('.four-p').style.position = "relative";
+            document.querySelector('.four-p').style.left = "-5px";
+
+            document.querySelector('.fifth-p').style.position = "relative";
+            document.querySelector('.fifth-p').style.left = "-5px";
+
+            
+            document.querySelector('.headi').style.position = "relative";
+            document.querySelector('.headi').style.top = "28px";
+
+        }
         window.addEventListener('scroll', function(){
             var discussionParagraph = document.querySelector(".discussion");
             var headDiscussionParagraph = document.querySelector(".headi");
@@ -974,6 +996,7 @@ passwordTransitionElement.style.color = "white";
              DesciptLang3.textContent = dataAboutUS[langAttr].three;
              DesciptLang4.textContent = dataAboutUS[langAttr].four;
              DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
+             document.querySelectorAll('.sixth').textContent = dataAboutUS[langAttr].sixth;
  
              langMenutitle.textContent = dataMenu[langAttr].menubtn;
              langMenu1.textContent = dataMenu[langAttr].decript1;

@@ -865,6 +865,38 @@ passwordTransitionElement.style.color = "white";
        
 
         }
+        if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 350px)').matches){
+            document.querySelector('.discussion').style['font-size'] = "8px";
+            document.querySelector('.discussion').style['line-height'] = "23px";
+            document.querySelector('.two-p').style.position = "relative";
+            document.querySelector('.two-p').style.left = "-2px";
+            document.querySelector('.four-p').style.position = "relative";
+            document.querySelector('.four-p').style.left = "-2px";
+            document.querySelector('.fifth-p').style.position = "relative";
+            document.querySelector('.fifth-p').style.left = "-2px";
+
+            document.querySelector('.homeaboutmeu').style["font-size"] = "8px";
+            document.querySelector('.stylggg').style["font-size"] = "8px";
+            document.querySelector('.end').style["font-size"] = "8px";
+       
+
+        }
+        if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 334px)').matches){
+            document.querySelector('.discussion').style['font-size'] = "6px";
+            document.querySelector('.discussion').style['line-height'] = "18px";
+            document.querySelector('.two-p').style.position = "relative";
+            document.querySelector('.two-p').style.left = "-2px";
+            document.querySelector('.four-p').style.position = "relative";
+            document.querySelector('.four-p').style.left = "-2px";
+            document.querySelector('.fifth-p').style.position = "relative";
+            document.querySelector('.fifth-p').style.left = "-2px";
+
+            document.querySelector('.homeaboutmeu').style["font-size"] = "7px";
+            document.querySelector('.stylggg').style["font-size"] = "7px";
+            document.querySelector('.end').style["font-size"] = "7px";
+       
+
+        }
 
         if(localStorage.getItem("theme")==="dark"&& localStorage.getItem("Is_Language")==="russian"){
             document.querySelector('.two-p').style.position = "relative";

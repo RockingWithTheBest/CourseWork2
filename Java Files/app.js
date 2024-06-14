@@ -817,6 +817,39 @@ passwordTransitionElement.style.color = "white";
             }
         }
 
+        // if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1231px)').matches){
+        //     document.querySelector('.discussion ').style['font-size'] = "29px";
+        //     document.querySelector('.two-p').style.position = "relative";
+        //     document.querySelector('.two-p').style.left = "0px";
+
+        //     document.querySelector('.three-p').style.position = "relative";
+        //     document.querySelector('.three-p').style.left = "-2px";
+
+        //     document.querySelector('.four-p').style.position = "relative";
+        //     document.querySelector('.four-p').style.left = "-6px";
+
+        //     document.querySelector('.fifth-p').style.position = "relative";
+        //     document.querySelector('.fifth-p').style.left = "-6px";
+           
+        // }
+        // if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1106px)').matches){
+        //     document.querySelector('.discussion ').style['font-size'] = "23px";
+        // }
+        if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 368px)').matches){
+            document.querySelector('.discussion').style['line-height'] = "15px";
+            document.querySelector('.two-p').style.position = "relative";
+            document.querySelector('.two-p').style.left = "-2px";
+            document.querySelector('.four-p').style.position = "relative";
+            document.querySelector('.four-p').style.left = "-2px";
+            document.querySelector('.fifth-p').style.position = "relative";
+            document.querySelector('.fifth-p').style.left = "-2px";
+
+            document.querySelector('.homeaboutmeu').style["font-size"] = "8px";
+            document.querySelector('.stylggg').style["font-size"] = "8px";
+            document.querySelector('.end').style["font-size"] = "8px";
+       
+
+        }
 
         if(localStorage.getItem("theme")==="dark"&& localStorage.getItem("Is_Language")==="russian"){
             document.querySelector('.two-p').style.position = "relative";

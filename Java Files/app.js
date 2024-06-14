@@ -409,7 +409,7 @@ passwordTransitionElement.style.color = "white";
                 DesciptLang3.textContent = dataAboutUS[langAttr].three;
                 DesciptLang4.textContent = dataAboutUS[langAttr].four;
                 DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
-                document.querySelector('.sixth').textContent = dataAboutUS[langAttr].sixth;
+               
 
                 langMenutitle.textContent = dataMenu[langAttr].menubtn;
                 langMenu1.textContent = dataMenu[langAttr].decript1;
@@ -996,7 +996,7 @@ passwordTransitionElement.style.color = "white";
              DesciptLang3.textContent = dataAboutUS[langAttr].three;
              DesciptLang4.textContent = dataAboutUS[langAttr].four;
              DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
-             document.querySelectorAll('.sixth').textContent = dataAboutUS[langAttr].sixth;
+           ;
  
              langMenutitle.textContent = dataMenu[langAttr].menubtn;
              langMenu1.textContent = dataMenu[langAttr].decript1;

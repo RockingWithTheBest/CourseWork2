@@ -3404,10 +3404,10 @@ header.Mains {
         font-weight: 400;
         position: relative;
         top: 16px;
-        left: -28px;
+        left: -21px;
     }
     span.hor {
-        left: 22px;
+        left: 7px;
         position: relative;
         font-family: Azeret Mono;
         font-size: 18px;
@@ -3428,14 +3428,14 @@ header.Mains {
         font-weight: 400;
         position: relative;
         top: 24px;
-        left: 15px;
+        left: 4px;
     }
     span.satsun {
         font-size: 15px;
         font-family: Inter;
         font-weight: 400;
         position: relative;
-        top: 67px;
+        top: 29px;
         left: 4px;
     }
     span.sunwork {
@@ -3443,8 +3443,8 @@ header.Mains {
         font-family: Inter;
         font-weight: 400;
         position: relative;
-        top: 73px;
-        left: 17px;
+        top: 38px;
+        left: 4px;
     }
     span.montitle {
         left: -22px;
@@ -5091,13 +5091,29 @@ footer.footer {
         font-family: Azeret Mono;
         font-weight: 700;
         top: 11px;
-        left: -5px;
+        left: -22px;
+    }
+    span.passagre1 {
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 400;
+        position: relative;
+        left: -26px;
+        top: 19px;
+    }
+    span.passagre2 {
+        font-size: 15px;
+        font-family: Inter;
+        font-weight: 400;
+        position: relative;
+        top: 24px;
+        left: -25px;
     }
     .Monday {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -32px;
+        top: -85px;
         left: 50px;
     }
 }

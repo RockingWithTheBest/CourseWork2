@@ -2,6 +2,139 @@ const burgerMenu = document.querySelector('.collect');
 burgerMenu.addEventListener( "click",function(){
    burgerMenu.classList.toggle('open');
 });
+//HErre
+if(localStorage.getItem("Is_Language")==="russian"){
+    document.querySelector(".lorem").style.position = "relative";
+    document.querySelector(".lorem").style.left = "217px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1135px)').matches){
+    document.querySelector(".lorem").style.position = "relative";
+    document.querySelector(".lorem").style.left = "150px";
+    document.querySelector(".award").style.position = "relative";
+    document.querySelector(".award").style.left = "54px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1065px)').matches){
+    document.querySelector(".lorem").style.position = "relative";
+    document.querySelector(".lorem").style.left = "150px";
+    document.querySelector(".lorem").style['font-size'] = "13px";
+    document.querySelector(".award").style.position = "relative";
+    document.querySelector(".award").style.top = "-43px";
+    document.querySelector(".award").style['font-size'] = "30px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1065px)').matches){
+    document.querySelector(".lorem").style.position = "relative";
+    document.querySelector(".lorem").style.left = "-117px";
+    document.querySelector(".lorem").style['font-size'] = "13px";
+    document.querySelector(".award").style.position = "relative";
+    document.querySelector(".award").style.top = "-150px";
+    document.querySelector(".award").style.left = "181px";
+    document.querySelector(".award").style['font-size'] = "30px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 843px)').matches){
+    document.querySelector(".award").style.position = "relative";
+    document.querySelector(".award").style.top = "141px";
+    document.querySelector(".award").style.left = "-106px";
+    document.querySelector(".award").style['font-size'] = "30px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 719px)').matches){
+    document.querySelector(".award").style.position = "relative";
+    document.querySelector(".award").style.top = "141px";
+    document.querySelector(".award").style.left = "-33px";
+    document.querySelector(".award").style['font-size'] = "28px";
+
+    document.querySelector(".lorem").style.position = "relative";
+    document.querySelector(".lorem").style.left = "-25px";
+    document.querySelector(".lorem").style.top = "163px";
+    document.querySelector(".lorem").style['font-size'] = "13px";
+    document.querySelector(".lorem").style['line-height'] = "13px";
+}
+
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 637px)').matches){
+    document.querySelector(".homeaboutmeu").style['font-size'] = "10px";
+    document.querySelector(".stylggg").style['font-size'] = "10px";
+    document.querySelector(".end").style['font-size'] = "10px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 581px)').matches){
+    document.querySelector(".award").style['font-size'] = "23px";
+    document.querySelector(".lorem").style['font-size'] = "11px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 572px)').matches){
+    document.querySelector(".homeaboutmeu").style['font-size'] = "8px";
+    document.querySelector(".stylggg").style['font-size'] = "8px";
+    document.querySelector(".end").style['font-size'] = "8px";
+}
+
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 518px)').matches){
+    document.querySelector(".discussion").style['font-size'] = "9px";
+    document.querySelector(".cafeM2").style['font-size'] = "16px";
+
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 512px)').matches){
+    document.querySelector(".Cafe-Menu").style.position = "absolute";
+    document.querySelector(".Cafe-Menu").style.left = "-24px";
+
+    document.querySelector(".cafeM2").style.position = "relative";
+    document.querySelector(".cafeM2").style.left = "35px";
+    
+    document.querySelector(".award").style.position = "relative";
+    document.querySelector(".award").style.top = "21px";
+    document.querySelector(".award").style['font-size'] = "19px";
+
+    document.querySelector(".lorem").style.position = "relative";
+    document.querySelector(".lorem").style.top = "40px";
+    document.querySelector(".lorem").style.left = "-24px";
+    document.querySelector(".lorem").style['font-size'] = "9px";
+    document.querySelector(".lorem").style['line-height'] = "10px";
+    // document.querySelector(".button1").style.position = "relative";
+    // document.querySelector(".button1").style.left = "198px";
+
+    
+    // document.querySelector(".button2").style.position = "relative";
+    // document.querySelector(".button2").style.left = "198px";
+    
+    // document.querySelector(".button3").style.position = "relative";
+    // document.querySelector(".button3").style.left = "198px";
+
+    // document.querySelector(".dropdown").style.position = "relative";
+    // document.querySelector(".dropdown").style.left = "198px";
+
+}
+
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 471px)').matches){
+    document.querySelector(".Cafe-Menu").style.position = "relative";
+    document.querySelector(".Cafe-Menu").style.top = "-128px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 471px)').matches){
+    document.querySelector(".cafeM2").style.position = "relative";
+    document.querySelector(".cafeM2").style.left = "9px";
+    document.querySelector(".cafeM2").style['font-size'] = "12px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 390px)').matches){
+    document.querySelector(".lorem").style['font-size'] = "7px";
+    document.querySelector(".discussion").style['font-size'] = "7px";
+    document.querySelector(".discussion").style['line-height'] = "20px";
+}
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 364px)').matches){
+    document.querySelector(".discussion").style['line-height'] = "20px";
+    document.querySelector(".discussion").style['font-size'] = "8px";
+}
+
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 356px)').matches){
+    document.querySelector(".homeaboutmeu").style['font-size'] = "6px";
+    document.querySelector(".stylggg").style['font-size'] = "6px";
+    document.querySelector(".end").style['font-size'] = "6px";
+
+}
+
+if(localStorage.getItem('theme')==='dark'){
+    document.querySelector("#coffee").style.backgroundColor = "black";
+    document.querySelector("#coffee").style.color = "white";
+   
+}
+else if(localStorage.getItem('theme')==='light'){
+    document.querySelector("#coffee").style.backgroundColor = "#813f51";
+    document.querySelector("#coffee").style.color = "white";
+}
 
 
 
@@ -50,22 +183,16 @@ document.querySelector("#exitConfirm").addEventListener("click", ()=>{
 
 let btn = document.getElementById("btn");
 const storedTheme = localStorage.getItem('theme');
-document.querySelector("#btn").addEventListener("click",() =>{
-    if(localStorage.getItem('theme')==='light'){
-        document.querySelector("#coffee").style.backgroundColor = "black";
-        document.querySelector("#coffee").style.color = "white";
-       
-    }else if(localStorage.getItem('theme')==='dark'){
-        document.querySelector("#coffee").style.backgroundColor = "#813f51";
-        document.querySelector("#coffee").style.color = "white";
-    }
-});
+// document.querySelector("#btn").addEventListener("click",() =>
+    {
+   
+}//);
 
 if (storedTheme === 'dark') {
   document.querySelector(".Wrapper").classList.add("dark-theme");
   document.querySelector("#container").classList.add("dark-theme");
   document.querySelector(".modal").classList.add("dark-theme");
-  document.querySelector("#coffee").classList.add("dark-theme");
+
   document.querySelector(".later-header").classList.add("dark-theme");
   document.querySelector(".footer").classList.add("dark-theme");
 
@@ -93,11 +220,22 @@ btn.onclick = function() {
   document.querySelector(".Wrapper").classList.toggle("dark-theme");
   document.querySelector("#container").classList.toggle("dark-theme");
   document.querySelector(".modal").classList.toggle("dark-theme");
-//   document.querySelector("#coffee").classList.toggle("dark-theme");
+
   document.querySelector(".later-header").classList.toggle("dark-theme");
   document.querySelector(".footer").classList.toggle("dark-theme");
 
   document.querySelector("#password-transition").classList.toggle("dark-theme");
+ 
+
+  if(localStorage.getItem('theme')==='light'){
+    document.querySelector("#coffee").style.backgroundColor = "black";
+    document.querySelector("#coffee").style.color = "white";
+   
+}
+else if(localStorage.getItem('theme')==='dark'){
+    document.querySelector("#coffee").style.backgroundColor = "#813f51";
+    document.querySelector("#coffee").style.color = "white";
+}
 
   let currentTheme;
   if (document.querySelector(".Wrapper").classList.contains('dark-theme')) {

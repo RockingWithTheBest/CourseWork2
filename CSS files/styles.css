@@ -618,13 +618,13 @@ div#container {
     color: var(--text-color);
 } 
 
-.dark-theme  #coffee{
+/* .dark-theme  #coffee{
     --background-color: #000;
     --text-color:white;
     --title-color: white;
     background-color: var(--background-color);
     color: var(--text-color);
-} 
+}  */
 .dark-theme .later-header{
     --background-color: #000;
     --text-color:white;
@@ -2063,7 +2063,7 @@ header.Mains {
 @media screen and (max-width :1110px){
     img.sitting {
         width: 949px;
-        top: -108px;
+        top: -16px;
         position: relative;
     }
     .MenuIcons {
@@ -5144,7 +5144,7 @@ footer.footer {
         font-family: Azeret Mono;
         font-weight: 700;
         top: 11px;
-        left: -22px;
+        left: 9px;
     }
     span.passagre1 {
         font-size: 15px;
@@ -5166,8 +5166,8 @@ footer.footer {
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -85px;
-        left: 50px;
+        top: -41px;
+        left: 3px;
     }
 }
 @media screen and (max-width: 511px) {
@@ -6317,5 +6317,23 @@ h10 {
     button.placeorder {
         position: absolute;
         top: 469px;
+    }
+}
+@media screen and (max-width: 356px){
+    .homeaboutmeu , .stylggg, .end{
+        font-size: 6px;
+    }
+    .lorem {
+        position: relative;
+        left: -24px;
+        font-size: 6px;
+        top: 40px;
+        line-height: 7px;
+    }
+    .award {
+        position: relative;
+        left: -33px;
+        top: 28px;
+        font-size: 15px;
     }
 }

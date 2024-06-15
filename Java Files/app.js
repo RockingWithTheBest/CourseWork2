@@ -576,7 +576,7 @@ passwordTransitionElement.style.color = "white";
             },
             "russian": {
                 "createaccount":"Cоздать аккаунт",
-                "usernameLable":"Имя пользователя",
+                "usernameLable":"Имя",
                 "errormessage":"Cообщение об ошибке",
                 "birthdayLabel":"День рождения",
                 "contactLabel":"Контакт",
@@ -1336,22 +1336,39 @@ placeOrderButton.addEventListener('click', (event) => {
 });
 confirmOrderButton.addEventListener('click',() =>{
     console.log('Order confirmed!');
-    if(confirm('Thanks for confirming order')){
-        orderModal.classList.remove('show');
-       form.classList.remove('hidden');
-       coffeForm.classList.add('hidden');
-       container1.classList.remove('hidden');
-       container2.classList.remove('hidden');
-       container3.classList.remove('hidden');
-       container4.classList.remove('hidden');
-       container5.classList.remove('hidden');
-       container6.classList.remove('hidden');   
-       container7.classList.remove('hidden');
-       container8.classList.remove('hidden');
-       document.querySelector(".container99").classList.remove('hidden');
-    
-
+    if(localStorage.getItem('Is_Language')==="english"){
+        if(confirm('Thanks for confirming order')){
+            orderModal.classList.remove('show');
+           form.classList.remove('hidden');
+           coffeForm.classList.add('hidden');
+           container1.classList.remove('hidden');
+           container2.classList.remove('hidden');
+           container3.classList.remove('hidden');
+           container4.classList.remove('hidden');
+           container5.classList.remove('hidden');
+           container6.classList.remove('hidden');   
+           container7.classList.remove('hidden');
+           container8.classList.remove('hidden');
+           document.querySelector(".container99").classList.remove('hidden');   
+        }
     }
+    else if(localStorage.getItem('Is_Language')==="english"){
+        if(confirm("Спасибо за подтверждение заказа")){
+            orderModal.classList.remove('show');
+           form.classList.remove('hidden');
+           coffeForm.classList.add('hidden');
+           container1.classList.remove('hidden');
+           container2.classList.remove('hidden');
+           container3.classList.remove('hidden');
+           container4.classList.remove('hidden');
+           container5.classList.remove('hidden');
+           container6.classList.remove('hidden');   
+           container7.classList.remove('hidden');
+           container8.classList.remove('hidden');
+           document.querySelector(".container99").classList.remove('hidden');       
+        }
+    }
+  
     
 });
 cancelOrderButton.addEventListener('click',() =>{
@@ -1446,10 +1463,20 @@ cancelOrderButton.addEventListener('click',() =>{
                 localStorage.removeItem('Is_Password');
                 localStorage.removeItem('Is_Email');
                 localStorage.removeItem('Is_Phone_Contact');
-                alert("All data will be reset.");
+                if(localStorage.getItem('Is_Language')==="english"){
+                    alert("All data will be reset.");
+                }
+                else if(localStorage.getItem('Is_Language')==="russian"){
+                    alert("Все данные будут сброшены.");
+                }
             }
             else{
-                alert("You haven't logged in.");
+                if(localStorage.getItem('Is_Language')==="english"){
+                    alert("You haven't logged in.");
+                }
+                else if(localStorage.getItem('Is_Language')==="russian"){
+                    alert("Вы не вошли.");
+                }
             }
         });
         
@@ -1467,13 +1494,25 @@ cancelOrderButton.addEventListener('click',() =>{
                 localStorage.removeItem('Is_Password');
                 localStorage.removeItem('Is_Email');
                 localStorage.removeItem('Is_Phone_Contact');
-                alert("You will be logged out and all data will be reset.");
+                if(localStorage.getItem('Is_Language')==="english"){
+                    alert("You will be logged out and all data will be reset.");
+                }
+                else if(localStorage.getItem('Is_Language')==="russian"){
+                    alert("Вы будете выходить и все данные будут сброшены.");
+                }
+               
             }
            
             else if( fullnamesLS.textContent==="")
                  {
                 console.log('logout');
-                alert("You haven't logged in.");
+                if(localStorage.getItem("Is_Language")==="english"){
+                    alert("You haven't logged in.");
+                }
+                else if(localStorage.getItem("Is_Language")==="russian"){
+                    alert("Вы не вошли.");
+                }
+              
             }
         });
         form.addEventListener('submit',(e)=>{
@@ -1496,7 +1535,15 @@ cancelOrderButton.addEventListener('click',() =>{
             if(usernameValue ===''){
                 //show error
                 //add error class
-               setErrorFor(username, "Username cannot be blank.");
+                var errorEng = "Name cannot be blank.";
+                var errorRus = "Поле не может быть пустым."
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(username,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(username,errorEng);
+                }
+             
                checkIcon.classList.add('hidden');
             }
             else{
@@ -1507,9 +1554,17 @@ cancelOrderButton.addEventListener('click',() =>{
             }
         
             if(emailValue ===''){
-                setErrorFor(email, "Email cannot be blank.");
+                 var errorEng = "Email cannot be blank."
+                 var errorRus = "Эл.Почта не может быть пустым."
+                
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(email,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(email,errorEng);
+                }
                 const checkIcon1 = document.querySelector('#check-icon-email');
-                 checkIcon1.classList.add('hidden');
+                checkIcon1.classList.add('hidden');
             }
             else{
                 emailValidation(email);
@@ -1517,7 +1572,15 @@ cancelOrderButton.addEventListener('click',() =>{
             }
         
             if(passwordValue ===''){
-                setErrorFor(password, "Password cannot be blank.");
+                var errorEng ="Password cannot be blank.";
+                var errorRus = "Пароль не может быть пустым."
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(password,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(password,errorEng);
+                }
+               
                 const checkIcon = document.querySelector('#check-icon-password');
                 checkIcon.classList.add('hidden');
                
@@ -1531,11 +1594,26 @@ cancelOrderButton.addEventListener('click',() =>{
         
             if(password2Value ===''){
                 isValidForm = false;
-                setErrorFor(password2, "Password cannot be blank.");
+              
+                var errorEng ="Password cannot be blank.";
+                var errorRus = "Пароль не может быть пустым."
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(password2,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(password2,errorEng);
+                }
             }
             else if(passwordValue!== password2Value){
                 isValidForm = false;
-                setErrorFor(password2, "Passwords do not match.");
+                var errorEng ="Passwords do not match.";
+                var errorRus = "Пароли не совпадают.";
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(password2,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(password2,errorEng);
+                }
                 checkIconpass.classList.add('hidden');
             }
             else{
@@ -1586,7 +1664,14 @@ cancelOrderButton.addEventListener('click',() =>{
             }
             else if(!emailRegex.test(inputValue)){
                 isValidForm = false;
-                setErrorFor(email, "Email is not in a valid format.")
+                var errorEng ="Email is not in a valid format.";
+                var errorRus = "Эл.почта имеет неправильный формат.";
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(email,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(email,errorEng);
+                }
                 checkIcon1.classList.add('hidden');
             }
         
@@ -1633,7 +1718,14 @@ cancelOrderButton.addEventListener('click',() =>{
             //const checkIcon = document.querySelector('#check-icon-birth');
             if(inputValue === ""){
                 isValidForm = false;
-                setErrorFor(year, "Year field cannot be blank.");
+                var errorEng ="Year field cannot be blank.";
+                var errorRus = "Поле Год не может быть пустым.";
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(year,errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(year,errorEng);
+                }
             }
             else{
                 var selectedDate = new Date(input.value.trim());
@@ -1646,7 +1738,14 @@ cancelOrderButton.addEventListener('click',() =>{
         
                 if(userAge < minimunAge){
                     isValidForm = false;
-                    setErrorFor(year, "You must be older than 16 to register.");
+                    var errorEng ="You must be older than 16 to register.";
+                    var errorRus = "Bам должно быть больше 16 лет.";
+                    if(localStorage.getItem("Is_Language")=== "russian"){
+                        setErrorFor(year, errorRus);
+                    }
+                    else if(localStorage.getItem("Is_Language")=== "english"){
+                        setErrorFor(year, errorEng);
+                    }
                  }
                 else {
                      setSuccessFor(year);
@@ -1668,17 +1767,38 @@ cancelOrderButton.addEventListener('click',() =>{
             }
             else if(!phoneNumberRegex.test(inputValue)){
                 isValidForm = false;
-                setErrorFor(phoneContact, "Phone number is not in correct format."); 
+                var errorEng ="Phone number is not in correct format.";
+                var errorRus = "Номер указан в неправильном формате.";
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(phoneContact,  errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(phoneContact,  errorEng);
+                }
                 checkIcon.classList.add('hidden');
             }
             else if(inputValue === ""){
                 isValidForm = false;
-                setErrorFor(phoneContact, "Phone number cannot be blank.");
+                var errorEng ="Phone number cannot be blank.";
+                var errorRus = "Номер телефона не может быть пустым.";
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(phoneContact,  errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(phoneContact,  errorEng);
+                }
                 checkIcon.classList.add('hidden');
             }
             else{
                 isValidForm = false;
-                setErrorFor(phoneContact, "Invalid Phone number is not format.");
+                var errorEng ="Invalid Phone number is not format.";
+                var errorRus = "Неверный номер телефона не отформатирован.";
+                if(localStorage.getItem("Is_Language")=== "russian"){
+                    setErrorFor(phoneContact, errorRus);
+                }
+                else if(localStorage.getItem("Is_Language")=== "english"){
+                    setErrorFor(phoneContact,  errorEng);
+                }
                 checkIcon.classList.add('hidden');
             }
         }
@@ -1733,44 +1853,85 @@ cancelOrderButton.addEventListener('click',() =>{
           registerButton.addEventListener('click',(e) => {
             e.preventDefault();
          
-            if(confirm('Do you wish to buy coffee on the main page?')){
-                console.log('added hidden');
-                container.classList.add('hidden');
-                     form.classList.add('hidden');
-                console.log('passed hidden');
-                // createacoountHeader.classList.add('hidden');
-                
-                
-                
-                         
-                container1.classList.remove('hidden');
-                container2.classList.remove('hidden');
-                container3.classList.remove('hidden');
-                container4.classList.remove('hidden');
-                container5.classList.remove('hidden');
-                container6.classList.remove('hidden');
-                container7.classList.remove('hidden');
-                container8.classList.remove('hidden');
-            }
+            var confirmEng = 'Do you wish to buy coffee on the main page?';
+            var confirmRus = 'Вы хотите купить кофе на главной странице?';
+            if(localStorage.getItem("Is_Language")=== "english"){
+                if(confirm(confirmEng)){
+                    console.log('added hidden');
+                    container.classList.add('hidden');
+                    form.classList.add('hidden');
+                    console.log('passed hidden');
+                    container1.classList.remove('hidden');
+                    container2.classList.remove('hidden');
+                    container3.classList.remove('hidden');
+                    container4.classList.remove('hidden');
+                    container5.classList.remove('hidden');
+                    container6.classList.remove('hidden');
+                    container7.classList.remove('hidden');
+                    container8.classList.remove('hidden');
+            }}
+            else if(localStorage.getItem("Is_Language")=== "russian"){
+                if(confirm(confirmRus)){
+                    console.log('added hidden');
+                    container.classList.add('hidden');
+                    form.classList.add('hidden');
+                    console.log('passed hidden');
+                    container1.classList.remove('hidden');
+                    container2.classList.remove('hidden');
+                    container3.classList.remove('hidden');
+                    container4.classList.remove('hidden');
+                    container5.classList.remove('hidden');
+                    container6.classList.remove('hidden');
+                    container7.classList.remove('hidden');
+                    container8.classList.remove('hidden');
+            }}
+            // createacoountHeader.classList.add('hidden'); 
         });
 
         buymecoffees.addEventListener('click', ()=>{
             if(fullnamesLS.textContent !== ""&&passwordLS!=="" && emailsLS.textContent !== ""&& birthdayLS.textContent !== ""&&contactLS.textContent !== ""){
-                if(confirm("You want to buy coffee?")){
-                    container1.classList.add('hidden');
-                    container2.classList.add('hidden');
-                    container3.classList.add('hidden');
-                    container4.classList.add('hidden');
-                    container5.classList.add('hidden');
-                    container6.classList.add('hidden');
-                    container7.classList.add('hidden');
-                    container8.classList.add('hidden');
-                    document.querySelector(".container99").classList.add('hidden');
-                    passwordConfirmForm_where_to_apply.classList.remove('hidden'); 
+
+                var alertmessageEng = "You want to buy coffee?";
+                var alertmessageRus = "Вы хотите купить кофе?";
+                if(localStorage.getItem("Is_Language")=== "english"){
+                    if(confirm(alertmessageEng)){
+                        container1.classList.add('hidden');
+                        container2.classList.add('hidden');
+                        container3.classList.add('hidden');
+                        container4.classList.add('hidden');
+                        container5.classList.add('hidden');
+                        container6.classList.add('hidden');
+                        container7.classList.add('hidden');
+                        container8.classList.add('hidden');
+                        document.querySelector(".container99").classList.add('hidden');
+                        passwordConfirmForm_where_to_apply.classList.remove('hidden'); 
+                    }
                 }
+                else if(localStorage.getItem("Is_Language")=== "russian"){
+                    if(confirm(alertmessageRus)){
+                        container1.classList.add('hidden');
+                        container2.classList.add('hidden');
+                        container3.classList.add('hidden');
+                        container4.classList.add('hidden');
+                        container5.classList.add('hidden');
+                        container6.classList.add('hidden');
+                        container7.classList.add('hidden');
+                        container8.classList.add('hidden');
+                        document.querySelector(".container99").classList.add('hidden');
+                        passwordConfirmForm_where_to_apply.classList.remove('hidden'); 
+                    }
+                }
+                
             }
             else{
-                alert('You neeed to register in order to make a purchase.')
+                var alertmessageENG = 'You neeed to register in order to make a purchase.';
+                var alertmessageRUS = 'Вы должны зарегистрироваться, чтобы совершить покупку.';
+                if(localStorage.getItem('Is_Language')=== "english"){
+                    alert(alertmessageENG);
+                }
+                else if(localStorage.getItem('Is_Language')=== "russian"){
+                    alert(alertmessageRUS);
+                }
             }
             
         })
@@ -1798,187 +1959,34 @@ cancelOrderButton.addEventListener('click',() =>{
                     container5.classList.add('hidden');
                     container6.classList.add('hidden');
                     container7.classList.add('hidden');
-                    container8.classList.add('hidden'); 
-                    alert('Correct password and user name');
+                    container8.classList.add('hidden');
+                    var alertEng =  'Correct password and user name';
+                    var alertRus =  'Правильный пароль и имя пользователя';
+                    if(localStorage.getItem("Is_Language")=== "english"){
+                        alert(alertEng);
+                    }
+                    else if(localStorage.getItem("Is_Language")=== "russian"){
+                        alert(alertRus);
+                    }
                     coffePurchaseModal.classList.remove('hidden');
                     passwordConfirmForm_where_to_apply.classList.add('hidden');              
                     console.log('Success');
                 }
                 else{            
                     console.log('not correct');
-                    alert('Incorrect password or Name please re-enter your details'+ passTrans );
-                    // if(confirm('Incorrect password or Name please re-enter your details'+ passTrans )){
-                    //     TransConfrimation();
-                    // }
-
-                    // passwordConfirmForm_where_to_apply.classList.remove('hidden'); 
-                }
-      
-           
-        
+                    var alertEng =  'Incorrect password or Name please re-enter your details '+ passTrans;
+                    var alertRus = "Неверный пароль или имя, пожалуйста, повторно введите ваши данные "+ passTrans;
+                    if(localStorage.getItem("Is_Language")=== "english"){
+                        alert(alertEng);
+                    }
+                    else if(localStorage.getItem("Is_Language")=== "russian"){
+                        alert(alertRus);
+                    } 
+                }    
         }
         
-
-
-
-
-
-
-//  //Catalog Apperaing
-//  const carousel = document.querySelector(".carousel");
-//  const arrowBtns = document.querySelectorAll("#wrapper i");
-//  const firstCardWidth =  carousel.querySelector(".card").offsetWidth;
-//  const carouselChildrens =  [...carousel.children];
- 
- 
-//  //Get the number of cards that can fit in the carousel at once
-//  let cardPerView = Math.round(carousel.offsetWidth/firstCardWidth);
- 
- 
-//  //Insert copies of the last few cards to beginning of the carousel for infinite scolling
-//  carouselChildrens.slice(-cardPerView).reverse().forEach(card =>{
-//     carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-//  })
- 
-//  //Insert copies of the first few cards to beginning of the carousel for infinite scolling
-//  carouselChildrens.slice(0 , cardPerView).reverse().forEach(card =>{
-//      carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-//   })
-  
- 
-//  let isDragging = false;
-//  // ,startX, startScrollLEft;
-//  const dragStart  = ()=>{
-//      isDragging = true;
-//      carousel.classList.add("dragging");
-//  }
-//  const dragStop = ()=>{
-//      isDragging = false;
-//      carousel.classList.remove("dragging");
-//  }
-//  const dragging = (e) =>{
- 
-//      if(!isDragging) return; //if isDragging is false return from here
-//      carousel.scrollLeft = e.pageX;
-//      //scrollLEft sets or returns the number of pixels an elements content is scrolled horizontally
-//  }//e.pageX returns the horizontal coordinates of mouse pointer.
- 
- 
-//  //Add event listerner for the arrow buttons to scroll the carousel left and right
-//  arrowBtns.forEach(btn =>{
-    
-//      btn.addEventListener("click", ()=>{
-//          if (btn.id === "left") {
-//              carousel.scrollLeft -= firstCardWidth;
-//            } else {
-//              carousel.scrollLeft += firstCardWidth;
-//            }
-//      })
-//      //if click btn is left, then subtract first card width from the carousel scrollLwft else add to it.
-//  })
- 
- 
-//  const infiniteScroll = () =>{
-//      //if the carousel is at the beginning scoll to the end
-//      if(carousel.scrollLeft  ===0){
-//          console.log("You've reached to the left End")
-//          carousel.scrollLeft = carousel.scrollWidth -( 2*carousel.offsetWidth)
-//      }
-//      //if the carousel is at the end scoll to the beginning
-//      else if(Math.ceil(carousel.scrollLeft === carousel.scrollWidth - carousel.offsetWidth)){
-//          //scrollWidth returns the width of the elemet's content
-//          //including content not visible on screen due to overflow
-//          //offsetWidth returns the viewable width of an element
-//          console.log("You've reached to the right End");
-//          carousel.scrollLeft = (carousel.offsetWidth)
-//      }
-//  }
-//  carousel.addEventListener("mousemove", dragging);
-//  carousel.addEventListener("mousedown", dragStart);
-//  carousel.addEventListener("mouseup", dragStop);
-//  carousel.addEventListener("scroll", infiniteScroll);
- 
- 
- 
- 
- 
- 
-
  const displayUrl = document.querySelector("#wrapper");
  const exitUrl = document.querySelector("#imgEx");
-
-
- 
-
- 
-//  const exitcatalog = document.querySelector("#imgEx");
-//  exitcatalog.addEventListener( "click",()=>{
-//      displayUrl.classList.add("hidden");
-//      document.querySelector(".menubtn").classList.remove("hidden");
-//      exitUrl.classList.add("hidden");
-
-  
-//      const catalog1 = document.querySelector("#Catalog1");
-//      const wrapper = document.querySelector("#wrapper");
-  
- 
-//      catalogMain.classList.add("hidden");
-//      catalog1.classList.add("hidden");
-//      wrapper.classList.add("hidden");
-     
- 
-     
-
-//     console.log("remove");
-
-//     container1.classList.remove('hidden');
-//     container2.classList.remove('hidden');
-//     container3.classList.remove('hidden');
-//     container4.classList.remove('hidden');
-//     container5.classList.remove('hidden');
-//     container6.classList.remove('hidden');
-//     container7.classList.remove('hidden');
-//     container8.classList.remove('hidden'); 
-
-//  });
- 
-
-
-
-
- const imgEx = document.querySelector("#imgEx").classList.add('hidden');
-//  const container1 = document.querySelector('.container11');
-//  const container2 = document.querySelector('.container22');
-//  const container3 = document.querySelector('.container33');
-//  const container4 = document.querySelector('.container44');
-//  const container5 = document.querySelector('.container55');
-//  const container6 = document.querySelector('.container66');
-//  const container7 = document.querySelector('.container77');
-//  const container8 = document.querySelector('.container88');
-//  fooodMenuBtn.addEventListener( "click",()=>{
-//     console.log("food menu");
-//     const catalogMain = document.querySelector("#bodyCata");
-//     const catalog1 = document.querySelector("#Catalog1");
-//     const wrapper = document.querySelector("#wrapper");
-    
-
-//     catalogMain.classList.remove("hidden");
-//     catalog1.classList.remove("hidden");
-//     wrapper.classList.remove("hidden");
-//     catalogMain.style.display = "flex";
-
-//     container1.classList.add('hidden');
-//     container2.classList.add('hidden');
-//     container3.classList.add('hidden');
-//     container4.classList.add('hidden');
-//     container5.classList.add('hidden');
-//     container6.classList.add('hidden');
-//     container7.classList.add('hidden');
-//     container8.classList.add('hidden'); 
-
-//  });
-
-
 
 
  const exitRegister =document.getElementById('exitReg');
@@ -2031,25 +2039,6 @@ cancelOrderButton.addEventListener('click',() =>{
  })
 
 
-
-// document.querySelector('.drinkmenu').addEventListener('click',()=>{
-//     document.querySelector('.carousel').classList.remove('hidden');
-
-//     container1.classList.add('hidden');
-//     container2.classList.add('hidden');
-//     container3.classList.add('hidden');
-//     container4.classList.add('hidden');
-//     container5.classList.add('hidden');
-//     container6.classList.add('hidden');
-//     container7.classList.add('hidden');
-//     container8.classList.add('hidden');
-//     document.querySelector('.container99').classList.add('hidden'); 
-
-//     document.querySelector("#carousel").classList.remove('hidden');
-//     document.querySelector('body').style.background = "#28283f";
-    
- 
-// });
 
 
 

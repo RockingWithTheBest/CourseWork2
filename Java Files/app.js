@@ -50,6 +50,16 @@ document.querySelector("#exitConfirm").addEventListener("click", ()=>{
 
 let btn = document.getElementById("btn");
 const storedTheme = localStorage.getItem('theme');
+document.querySelector("#btn").addEventListener("click",() =>{
+    if(localStorage.getItem('theme')==='light'){
+        document.querySelector("#coffee").style.backgroundColor = "black";
+        document.querySelector("#coffee").style.color = "white";
+       
+    }else if(localStorage.getItem('theme')==='dark'){
+        document.querySelector("#coffee").style.backgroundColor = "#813f51";
+        document.querySelector("#coffee").style.color = "white";
+    }
+});
 
 if (storedTheme === 'dark') {
   document.querySelector(".Wrapper").classList.add("dark-theme");
@@ -68,7 +78,7 @@ passwordTransitionElement.style.color = "#f19b9b;";
   document.querySelector(".Wrapper").classList.remove("dark-theme");
   document.querySelector("#container").classList.remove("dark-theme");
   document.querySelector(".modal").classList.remove("dark-theme");
-  document.querySelector("#coffee").classList.remove("dark-theme");
+//   document.querySelector("#coffee").classList.remove("dark-theme");
   document.querySelector(".later-header").classList.remove("dark-theme");
   document.querySelector(".footer").classList.remove("dark-theme");
 
@@ -83,7 +93,7 @@ btn.onclick = function() {
   document.querySelector(".Wrapper").classList.toggle("dark-theme");
   document.querySelector("#container").classList.toggle("dark-theme");
   document.querySelector(".modal").classList.toggle("dark-theme");
-  document.querySelector("#coffee").classList.toggle("dark-theme");
+//   document.querySelector("#coffee").classList.toggle("dark-theme");
   document.querySelector(".later-header").classList.toggle("dark-theme");
   document.querySelector(".footer").classList.toggle("dark-theme");
 
@@ -485,7 +495,7 @@ passwordTransitionElement.style.color = "white";
         var confirmationForm = {
             "russian" : {
                 "confirmationheader":"Подтверждение",
-                "forlanguageUSer": "Имя",
+                "forlanguageUSer": "Ваше имя",
                 "passwordlang":"Пароль",
                 "confirmMiddlebtn":"Отправки"
             },
@@ -816,7 +826,10 @@ passwordTransitionElement.style.color = "white";
                 "sixth":""  
             }
         }
-
+        // if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1440px)').matches){
+        //     document.querySelector('#password-confim').style.position = "relative";
+        //     document.querySelector('#password-confim').style.left = "26px";
+        // }
         // if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1231px)').matches){
         //     document.querySelector('.discussion ').style['font-size'] = "29px";
         //     document.querySelector('.two-p').style.position = "relative";

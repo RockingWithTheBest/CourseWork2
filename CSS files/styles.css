@@ -28,6 +28,20 @@ span.lic {
     left: 1px;
     top: 1px;
 }
+label.extra {
+    position: absolute;
+    left: 73px;
+}
+select#drink {
+    position: absolute;
+    left: 235px;
+    top: 238px;
+}
+label#drinks {
+    position: absolute;
+    left: 170px;
+    top: 241px;
+}
 div#imgEx {
     position: relative;
     top: 34px;
@@ -333,17 +347,23 @@ div#password-transition label {
 .pass-transitionusername{
     padding-bottom: 10px;
 }
-input#usernameconfirm, input#password-confim {
+input#usernameconfirm {
     font-family: Roboto Condensed;
-    position: relative;
-    left: 5px;
+    position: absolute;
+    left: 113px;
+    font-size: 21px;
+}
+input#password-confim {
+    font-family: Roboto Condensed;
+    position: absolute;
+    left: 113px;
     font-size: 21px;
 }
 button#confirmMiddlebtn {
     background-color: #7b4d4d;
-    position: relative;
+    position: absolute;
     top: 54px;
-    left: -135px;
+    left: 151px;
     height: 36px;
     width: 112px;
     border-radius: 9px;
@@ -359,10 +379,7 @@ button#confirmMiddlebtn {
     font-style: italic;
     color: #d36969;
 }
-label#drinks {
-    position: relative;
-    left: -13px;
-}
+
 select#drink  {
     margin-bottom: 13px;
     border-radius: 4px;
@@ -387,9 +404,19 @@ label.formLabels {
     font-style: italic;
 }
 input#email {
-    width: 214px;
-    height: 45px;
+    width: 264px;
+    height: 28px;
     margin-bottom: 10px;
+}
+label.name {
+    position: absolute;
+    left: 177px;
+    top: 409px;
+}
+label.emails {
+    position: absolute;
+    top: 449px;
+    left: 137px;
 }
 select#size {
     margin-bottom: 60px;
@@ -397,8 +424,17 @@ select#size {
     width: 187px;
     height: 40px;
     font-family: Roboto Condensed;
-    position: relative;
-    left: 11px;
+    position: absolute;
+    left: 234px;
+}
+label#size {
+    position: absolute;
+    left: 152px;
+    top: 373px;
+}
+button.placeorder {
+    position: absolute;
+    top: 508px;
 }
 #order-form h1 {
     font-size: 30px;
@@ -406,14 +442,30 @@ select#size {
     margin-bottom: 40px;
     color: #e56f6f;
 }
-input#extra, input#name{
+input#extra {
     margin-bottom: 13px;
     border-radius: 4px;
-    height: 42px;
+    height: 19px;
     width: 262px;
     border: 2px solid white;
-    position: relative;
-    left: 19px;
+    position: absolute;
+    left: 233px;
+    top: 371px;
+}
+input#name {
+    margin-bottom: 13px;
+    border-radius: 4px;
+    height: 19px;
+    width: 262px;
+    border: 2px solid white;
+    position: absolute;
+    left: 233px;
+    top: 408px;
+}
+input#email {
+    position: absolute;
+    left: 232px;
+    top: 449px;
 }
 div#coffee {
     max-width: 600px;
@@ -543,6 +595,7 @@ div#container {
     --title-color: #000;
 }
 
+
 .dark-theme .modal-content{
     --background-color: #000;
     --text-color:white;
@@ -565,7 +618,7 @@ div#container {
     color: var(--text-color);
 } 
 
-.dark-theme #coffee{
+.dark-theme  #coffee{
     --background-color: #000;
     --text-color:white;
     --title-color: white;
@@ -6060,7 +6113,7 @@ h10 {
     select#drink {
         margin-bottom: 13px;
         border-radius: 4px;
-        width: 198px;
+        width: 188px;
         height: 40px;
         font-family: Roboto Condensed;
         position: relative;
@@ -6080,5 +6133,189 @@ h10 {
     }
     .stylggg,     .end {
         font-size: 8px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    input#usernameconfirm, input#password-confim {
+        width: 160px;
+        height: 18px;
+    } 
+    div#password-transition label {
+        font-size: 15px;
+        font-style: italic;
+    }  
+    button#confirmMiddlebtn {
+        background-color: #7b4d4d;
+        position: relative;
+        top: 37px;
+        left: 68px;
+        height: 29px;
+        width: 92px;
+        border-radius: 9px;
+        border: 2px solid #7b4d4d;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    form#order-form {
+        position: relative;
+        left: -36px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .later-header h3 {
+        font-size: 29px;
+    }
+    #order-form h1{
+        font-size: 21px;
+    }
+    label {
+        font-size: 14px;
+        color: white;
+        font-family: Roboto;
+    }
+    select#size {
+        margin-bottom: 60px;
+        border-radius: 4px;
+        width: 187px;
+        height: 40px;
+        font-family: Roboto Condensed;
+        position: absolute;
+        left: 206px;
+    }
+    select#drink {
+        position: absolute;
+        left: 207px;
+        top: 238px;
+    }
+    label#drinks {
+        position: absolute;
+        left: 153px;
+        top: 241px;
+    }
+    input#extra {
+        margin-bottom: 13px;
+        border-radius: 4px;
+        height: 19px;
+        width: 213px;
+        border: 2px solid white;
+        position: absolute;
+        left: 200px;
+        top: 371px;
+    }
+    label#size {
+        position: absolute;
+        left: 134px;
+        top: 373px;
+    }
+    input#name {
+        margin-bottom: 13px;
+        border-radius: 4px;
+        height: 19px;
+        width: 213px;
+        border: 2px solid white;
+        position: absolute;
+        left: 200px;
+        top: 408px;
+    }
+    label.name {
+        position: absolute;
+        left: 154px;
+        top: 409px;
+    }
+    label.emails {
+        position: absolute;
+        top: 449px;
+        left: 120px;
+    }
+    input#email {
+        position: absolute;
+        left: 201px;
+        top: 449px;
+    }
+    input#email {
+        border-radius: 6px;
+        width: 213px;
+        height: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    form#order-form {
+        position: relative;
+        left: -59px;
+    }
+}
+@media screen and (max-width: 387px) {
+    select#size {
+        margin-bottom: 60px;
+        border-radius: 4px;
+        width: 187px;
+        height: 40px;
+        font-family: Roboto Condensed;
+        position: absolute;
+        left: 141px;
+        top: 135px;
+    }
+    label#drinks {
+        position: absolute;
+        left: 153px;
+        top: 195px;
+    }
+    select#drink {
+        position: absolute;
+        left: 143px;
+        top: 220px;
+    }
+    label#size {
+        position: absolute;
+        left: 134px;
+        top: 278px;
+    }
+    input#extra {
+        margin-bottom: 13px;
+        border-radius: 4px;
+        height: 25px;
+        width: 173px;
+        border: 2px solid white;
+        position: absolute;
+        left: 145px;
+        top: 309px;
+    }
+    label.name {
+        position: absolute;
+        left: 150px;
+        top: 357px;
+    }
+    input#name {
+        margin-bottom: 13px;
+        border-radius: 4px;
+        height: 25px;
+        width: 173px;
+        border: 2px solid white;
+        position: absolute;
+        left: 148px;
+        top: 384px;
+    }
+    label.emails {
+        position: absolute;
+        top: 430px;
+        left: 120px;
+    }
+    input#email {
+        position: absolute;
+        left: 145px;
+        top: 449px;
+        height: 25px;
+        width: 173px;
+    }
+}
+@media screen and (max-width: 364px){
+    button.placeorder {
+        position: absolute;
+        top: 469px;
     }
 }

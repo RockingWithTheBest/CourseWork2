@@ -6345,3 +6345,60 @@ h10 {
         font-size: 11px;
     }
 }
+
+@media screen and (max-width: 400px){
+
+    span.passagre1 {
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 400;
+        position: relative;
+        left: 12px;
+        top: 19px;
+    }
+    span.passagre2 {
+        font-size: 13px;
+        font-family: Inter;
+        font-weight: 400;
+        position: relative;
+        top: 24px;
+        left: 11px;
+    }
+    .Monday {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -41px;
+        left: -13px;
+    }
+    
+    .hours {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -87px;
+        left: -30px;
+    }
+    .location {
+        left: -9px;
+        top: -58px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    span.tur {
+        font-size: 13px;
+   
+    }
+    span.due {
+        font-size: 12px;
+    }
+    span.satsun {
+        font-size: 12px;
+     
+    }
+    span.sunwork, span.addi2 {
+        font-size: 12px;
+    }
+
+}

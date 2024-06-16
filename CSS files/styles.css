@@ -6330,10 +6330,18 @@ h10 {
         top: 40px;
         line-height: 7px;
     }
-    .award {
+    .award
+    
+    {
         position: relative;
         left: -33px;
         top: 28px;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .divfooter, .footecontactme {
+        font-size: 11px;
     }
 }

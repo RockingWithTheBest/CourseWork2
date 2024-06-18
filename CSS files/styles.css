@@ -6186,6 +6186,11 @@ h10 {
     #order-form h1{
         font-size: 21px;
     }
+    label.extra {
+        position: absolute;
+        left: 166px;
+        top: 118px;
+    }
     label {
         font-size: 14px;
         color: white;
@@ -6222,7 +6227,7 @@ h10 {
     }
     label#size {
         position: absolute;
-        left: 134px;
+        left: 145px;
         top: 373px;
     }
     input#name {
@@ -6237,13 +6242,13 @@ h10 {
     }
     label.name {
         position: absolute;
-        left: 154px;
+        left: 138px;
         top: 409px;
     }
     label.emails {
         position: absolute;
         top: 449px;
-        left: 120px;
+        left: 147px;
     }
     input#emailX {
         position: absolute;

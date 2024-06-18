@@ -6463,8 +6463,3 @@ h10 {
     document.querySelector('.end').style["font-size"] = "8px";
 } */
 
-@media screen and (max-width: 334px){
-    .homeaboutmeu, .stylggg, .end{
-        font-size: 6px;
-    }
-}

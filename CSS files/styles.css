@@ -5203,6 +5203,12 @@ footer.footer {
         top: -152px;
         left: 1px;
     }
+    .Cafe-Menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media screen and (max-width: 437px) {
     .homeaboutmeu {

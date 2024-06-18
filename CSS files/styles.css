@@ -6435,3 +6435,9 @@ h10 {
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .footecontactme, .divfooter {
+        font-size: 10px;
+    }
+}

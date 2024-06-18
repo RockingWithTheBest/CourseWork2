@@ -6462,4 +6462,10 @@ h10 {
     document.querySelector('.stylggg').style["font-size"] = "8px";
     document.querySelector('.end').style["font-size"] = "8px";
 } */
-
+@media screen and (max-width: 380px) {
+    section#Container4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

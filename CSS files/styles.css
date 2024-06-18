@@ -5565,7 +5565,7 @@ span.lattecafe {
 }
 @media screen and (max-width: 480px){
     .button1 {
-        left: 102px;
+        left: 76px;
         position: absolute;
         top: 154px;
         cursor: pointer;
@@ -5573,11 +5573,11 @@ span.lattecafe {
     .button2 {
         position: absolute;
         top: 218px;
-        left: 103px;
+        left: 76px;
         cursor: pointer;
     }
     .button3 {
-        left: 103px;
+        left: 76px;
         position: absolute;
         top: 290px;
         cursor: pointer;
@@ -5585,7 +5585,7 @@ span.lattecafe {
     .dropdown {
         position: absolute;
         margin-top: 21px;
-        left: 103px;
+        left: 76px;
         top: 338px;
     }
     button.foodmenu, button.drinkmenu, button.takeaway, .dropdown .Creditals {

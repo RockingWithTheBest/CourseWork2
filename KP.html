@@ -511,7 +511,7 @@
                     </select>
                 </div>
                 <div>
-                    <label class = "size" class = "formLabels"  id ="size" >Size :</label>
+                    <label class = "size" class = "formLabels"  id ="size" >Extras :</label>
                     <select  name="size" id="size">
                         <option value ="" selected hidden class = "selectsize">Select size</option>
                         <option value="americano" class = "smallsize">Small</option>
@@ -520,7 +520,7 @@
                     </select>
                 </div>
                 <div>
-                    <label class = "extra" class = "form-Labels" >Extra's :</label>
+                    <label class = "extra" class = "form-Labels" >Size :</label>
                     <input type="text" id="extra" placeholder="Any extra e.g cinomon, honey, syrup e.t.c">
                 </div>
                 <div>
@@ -529,7 +529,7 @@
                 </div>
                 <div>
                     <label class = "emails" class = "form-Labels" >Email :</label>
-                    <input type="email" id="email" placeholder="Enter you email address">
+                    <input type="email" id="emailX" placeholder="Enter you email address">
                 </div>
                 <div>
                     <button class = "placeorder"><span  class = "placeorder">Place Order</span> </button>
@@ -540,18 +540,17 @@
         </div>
         <div class="model" id ="orderModel">
             <div class  ="modal-content">
-                <h2>Order Summary</h2>
+                <h2 class = "summary" >Order Summary</h2>
                 <p id = "order-summary">
                     
                 </p>
-                <button id="confirm-order">Confirm</button>
-                <button id="cancel-order">Cancel</button>
+                <button id="confirm-order" class = "sumarryconfirm">Confirm</button>
+                <button id="cancel-order" class = "summarycancel">Cancel</button>
             </div>
         </div>
    
     </div>
 
-    
     <div id="carousel" class ="hidden"> 
          <div>
             <div class="carousel-item">

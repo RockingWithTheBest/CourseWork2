@@ -30,7 +30,7 @@ span.lic {
 }
 label.extra {
     position: absolute;
-    left: 73px;
+    left: 184px;
 }
 select#drink {
     position: absolute;
@@ -403,20 +403,20 @@ label.formLabels {
     font-size: 17px;
     font-style: italic;
 }
-input#email {
+input#emailX {
     width: 264px;
     height: 28px;
     margin-bottom: 10px;
 }
 label.name {
     position: absolute;
-    left: 177px;
+    left: 156px;
     top: 409px;
 }
 label.emails {
     position: absolute;
     top: 449px;
-    left: 137px;
+    left: 166px;
 }
 select#size {
     margin-bottom: 60px;
@@ -429,7 +429,7 @@ select#size {
 }
 label#size {
     position: absolute;
-    left: 152px;
+    left: 164px;
     top: 373px;
 }
 button.placeorder {
@@ -462,11 +462,12 @@ input#name {
     left: 233px;
     top: 408px;
 }
-input#email {
+input#emailX {
     position: absolute;
     left: 232px;
     top: 449px;
 }
+
 div#coffee {
     max-width: 600px;
     position: relative;
@@ -546,7 +547,7 @@ button#confirm-order, button#cancel-order {
     margin-bottom: 13px;
     border-radius: 6px;
     background-color: #a74b4b;
-    width: 86px;
+    width: 116px;
     height: 30px;
     color: white;
     font-style: italic;
@@ -6036,10 +6037,10 @@ h10 {
 @media screen and (max-width: 376px) {
     input#email {
         width: 272px;
-        height: 45px;
+        height: 28px;
         margin-bottom: 10px;
         position: relative;
-        left: 17px;
+        left: -2px;
     }
 }
 @media screen and (max-width: 364px) {
@@ -6053,12 +6054,12 @@ h10 {
         left: 19px;
     }
     input#email {
-        width: 200px;
-        height: 45px;
+        width: 252px;
+        height: 24px;
         margin-bottom: 10px;
         position: relative;
-        left: -36px;
-        top: 23px;
+        left: -1px;
+        top: 19px;
     }
    .emails {
         position: relative;
@@ -6087,12 +6088,20 @@ h10 {
         margin-top: 33px;
     }
     input#email {
-        width: 200px;
-        height: 45px;
+        width: 94%;
+        height: 25px;
         margin-bottom: 10px;
         position: relative;
-        left: 18px;
+        left: 0px;
         top: 23px;
+    }
+    img#exitReg {
+        width: 17px;
+        border-radius: 50%;
+        position: relative;
+        left: -150px;
+        top: -35px;
+        cursor: pointer;
     }
     .emails {
         position: relative;
@@ -6230,12 +6239,12 @@ h10 {
         top: 449px;
         left: 120px;
     }
-    input#email {
+    input#emailX {
         position: absolute;
         left: 201px;
         top: 449px;
     }
-    input#email {
+    input#emailX {
         border-radius: 6px;
         width: 213px;
         height: 25px;
@@ -6305,7 +6314,7 @@ h10 {
         top: 430px;
         left: 120px;
     }
-    input#email {
+    input#emailX {
         position: absolute;
         left: 145px;
         top: 449px;
@@ -6401,4 +6410,28 @@ h10 {
         font-size: 12px;
     }
 
+}
+
+
+@media screen and (max-width: 380px){
+    p#order-summary {
+        color: #af6767;
+        font-size: 14px;
+        font-style: italic;
+    }
+    .modal-content h2 {
+        color: #a15757;
+        font-style: italic;
+        font-size: 18px;
+    }
+    button#confirm-order, button#cancel-order {
+        margin-bottom: 13px;
+        border-radius: 6px;
+        background-color: #a74b4b;
+        width: 88px;
+        height: 25px;
+        color: white;
+        font-style: italic;
+        font-size: 10px;
+    }
 }

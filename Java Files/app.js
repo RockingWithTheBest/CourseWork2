@@ -1,4 +1,5 @@
 const burgerMenu = document.querySelector('.collect');
+console.log(localStorage.getItem('Is_Language'));
 burgerMenu.addEventListener( "click",function(){
    burgerMenu.classList.toggle('open');
 });
@@ -124,6 +125,37 @@ if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-wi
     document.querySelector(".stylggg").style['font-size'] = "6px";
     document.querySelector(".end").style['font-size'] = "6px";
 
+}
+
+
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1440px)').matches){
+    document.querySelector(".extra").style.position = "absolute";
+    document.querySelector(".extra").style.left = "152px";
+
+
+    document.querySelector("#size").style.position = "absolute";
+    document.querySelector("#size").style.left = "69px";
+
+    document.querySelector(".name").style.position = "absolute";
+    document.querySelector(".name").style.left = "173px";
+
+    document.querySelector(".emails").style.position = "absolute";
+    document.querySelector(".emails").style.left = "131px";
+}
+
+if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 500px)').matches){
+    document.querySelector(".extra").style.position = "absolute";
+    document.querySelector(".extra").style.left = "139px";
+
+
+    document.querySelector("#size").style.position = "absolute";
+    document.querySelector("#size").style.left = "69px";
+
+    document.querySelector(".name").style.position = "absolute";
+    document.querySelector(".name").style.left = "154px";
+
+    document.querySelector(".emails").style.position = "absolute";
+    document.querySelector(".emails").style.left = "121px";
 }
 
 if(localStorage.getItem('theme')==='dark'){
@@ -411,8 +443,11 @@ passwordTransitionElement.style.color = "white";
         const emails = document.querySelector(".emails");
         const regularsize = document.querySelector(".regularsize"); 
        
+        const suammary = document.querySelector(".summary");
+        const summaryConfirm = document.querySelector(".sumarryconfirm");
+        const summarycancel = document.querySelector(".summarycancel");
      
-
+    
        
               
         langLink.forEach(el =>{
@@ -422,7 +457,12 @@ passwordTransitionElement.style.color = "white";
 
                 const langAttr = el.getAttribute('language');
                 localStorage.setItem('Is_Language', langAttr);
-                
+
+
+                suammary.textContent = sumaryOrder[langAttr].summary;
+                summaryConfirm.textContent = sumaryOrder[langAttr].sumarryconfirm;
+                summarycancel.textContent = sumaryOrder[langAttr].summarycancel;
+
               
 
                 coffeeorderlang.textContent = ordeformMassive[langAttr].coffeeorder;
@@ -591,6 +631,20 @@ passwordTransitionElement.style.color = "white";
           
             })
         });
+
+        
+        var sumaryOrder= {
+            "english": {
+                "summary":"Order Summary",
+                "sumarryconfirm":"Confirm",
+                "summarycancel":"Cancel"
+            },
+            "russian": {
+                "summary":"Сводка заказа",
+                "sumarryconfirm":"Подтвердить",
+                "summarycancel":"Отменить"
+            }
+        }
    
         var ordeformMassive = {
             "russian" :{
@@ -601,11 +655,11 @@ passwordTransitionElement.style.color = "white";
                 "mocha":"Моча",
                 "cappuccino":"Капучино",
                 "espresso":"Экспрессо",
-                "size":"Размер :",
+                "size":"Дополнительные :",
                 "selectsize":"Выберите размер",
                 "smallsize":"Маленькое",
                 "mediumsize":"Средное",
-                "extra":"Дополнительные :",
+                "extra":"Размер :",
                 "name":"Имя :",
                 "placeorder":"Заказать",
                 "emails":"Эл.Почта :",
@@ -619,14 +673,14 @@ passwordTransitionElement.style.color = "white";
                 "mocha":"Mocha",
                 "cappuccino":"Cappuccino",
                 "espresso":"Espresso",
-                "size":"Size :",
+                "size":"Extras :",
                 "selectsize":"Select size",
                 "smallsize":"Small",
                 "mediumsize":"Medium",
-                "extra":"Extra's :",
+                "extra":"Size :",
                 "name":"Names :",
-                "placeorder":"",
-                "emails":"Place Order",
+                "placeorder":"Place Order",
+                "emails":"Email :",
                 "regularsize":"Regular"
             }
         }
@@ -986,6 +1040,8 @@ passwordTransitionElement.style.color = "white";
         // if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 1106px)').matches){
         //     document.querySelector('.discussion ').style['font-size'] = "23px";
         // }
+     
+
         if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 368px)').matches){
             document.querySelector('.discussion').style['line-height'] = "15px";
             document.querySelector('.two-p').style.position = "relative";
@@ -1093,8 +1149,15 @@ passwordTransitionElement.style.color = "white";
         console.log(localStorage.getItem('Is_Language'));
         const langAttr = "english";
         const langAttrRus = "russian";
+
+
+
          if(savedLang ==="english"){
             console.log("eng")
+            suammary.textContent = sumaryOrder[langAttr].summary;
+        
+            summaryConfirm.textContent = sumaryOrder[langAttr].sumarryconfirm;
+            summarycancel.textContent = sumaryOrder[langAttr].summarycancel
              coffeeorderlang.textContent = ordeformMassive[langAttr].coffeeorder;
              drinkorderlang.textContent = ordeformMassive[langAttr].drink;
              selectdrinkorderlang.textContent = ordeformMassive[langAttr].selectdrink;
@@ -1227,7 +1290,7 @@ passwordTransitionElement.style.color = "white";
              DesciptLang3.textContent = dataAboutUS[langAttr].three;
              DesciptLang4.textContent = dataAboutUS[langAttr].four;
              DesciptLang5.textContent = dataAboutUS[langAttr].fifth;
-           ;
+           
  
              langMenutitle.textContent = dataMenu[langAttr].menubtn;
              langMenu1.textContent = dataMenu[langAttr].decript1;
@@ -1260,6 +1323,11 @@ passwordTransitionElement.style.color = "white";
              lorem7.textContent = loremData[langAttr].lorem7; 
          }
          else {
+            suammary.textContent = sumaryOrder[langAttrRus].summary;
+
+        
+            summaryConfirm.textContent = sumaryOrder[langAttrRus].sumarryconfirm;
+            summarycancel.textContent = sumaryOrder[langAttrRus].summarycancel
             coffeeorderlang.textContent = ordeformMassive[langAttrRus].coffeeorder;
             drinkorderlang.textContent = ordeformMassive[langAttrRus].drink;
             selectdrinkorderlang.textContent = ordeformMassive[langAttrRus].selectdrink;
@@ -1476,7 +1544,7 @@ placeOrderButton.addEventListener('click', (event) => {
     console.log(drink);
     const size = document.getElementById('size').value;
     const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
+    const email = document.getElementById('emailX').value.trim();
     const extra = document.getElementById('extra').value.trim();
 
     const orderSummarytext = `Drinks: ${drink}\nSize: ${size}\nExtras: ${extra}\nName: ${name}\nEmail: ${email}`;
@@ -1485,40 +1553,45 @@ placeOrderButton.addEventListener('click', (event) => {
 
     orderModal.classList.add('show'); 
 });
+const container9 = document.querySelector(".container99");
 confirmOrderButton.addEventListener('click',() =>{
     console.log('Order confirmed!');
     if(localStorage.getItem('Is_Language')==="english"){
-        if(confirm('Thanks for confirming order')){
+        confirm('Thanks for confirming order')
             orderModal.classList.remove('show');
-           form.classList.remove('hidden');
-           coffeForm.classList.add('hidden');
-           container1.classList.remove('hidden');
-           container2.classList.remove('hidden');
-           container3.classList.remove('hidden');
-           container4.classList.remove('hidden');
-           container5.classList.remove('hidden');
-           container6.classList.remove('hidden');   
-           container7.classList.remove('hidden');
-           container8.classList.remove('hidden');
-           document.querySelector(".container99").classList.remove('hidden');   
-        }
+            form.classList.remove('hidden');
+            coffeForm.classList.add('hidden');
+            container1.classList.remove('hidden');
+            container2.classList.remove('hidden');
+            container3.classList.remove('hidden');
+            container4.classList.remove('hidden');
+            container5.classList.remove('hidden');
+            container6.classList.remove('hidden');   
+            container7.classList.remove('hidden');
+            container8.classList.remove('hidden');
+            container9.classList.remove('hidden');
+        
     }
-    else if(localStorage.getItem('Is_Language')==="english"){
-        if(confirm("Спасибо за подтверждение заказа")){
+
+    else if(localStorage.getItem('Is_Language')==="russian"){
+        confirm("Спасибо за подтверждение заказа")
             orderModal.classList.remove('show');
-           form.classList.remove('hidden');
-           coffeForm.classList.add('hidden');
-           container1.classList.remove('hidden');
-           container2.classList.remove('hidden');
-           container3.classList.remove('hidden');
-           container4.classList.remove('hidden');
-           container5.classList.remove('hidden');
-           container6.classList.remove('hidden');   
-           container7.classList.remove('hidden');
-           container8.classList.remove('hidden');
-           document.querySelector(".container99").classList.remove('hidden');       
-        }
+            form.classList.remove('hidden');
+            coffeForm.classList.add('hidden');
+            container1.classList.remove('hidden');
+            container2.classList.remove('hidden');
+            container3.classList.remove('hidden');
+            container4.classList.remove('hidden');
+            container5.classList.remove('hidden');
+            container6.classList.remove('hidden');   
+            container7.classList.remove('hidden');
+            container8.classList.remove('hidden');
+            container9.classList.remove('hidden');
+        
     }
+   
+
+  
   
     
 });

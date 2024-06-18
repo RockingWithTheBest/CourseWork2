@@ -6446,9 +6446,25 @@ h10 {
         font-size: 10px;
     }
 }
-
+@media screen and (max-width: 363px){
+    .homeaboutmeu, .stylggg, .end{
+        font-size: 6px;
+    }
+}
 @media screen and (max-width: 400px) {
     .footecontactme, .divfooter {
         font-size: 10px;
+    }
+}
+
+/* if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 363px)').matches){
+    document.querySelector('.homeaboutmeu').style["font-size"] = "8px";
+    document.querySelector('.stylggg').style["font-size"] = "8px";
+    document.querySelector('.end').style["font-size"] = "8px";
+} */
+
+@media screen and (max-width: 334px){
+    .homeaboutmeu, .stylggg, .end{
+        font-size: 6px;
     }
 }

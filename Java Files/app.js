@@ -1072,6 +1072,7 @@ passwordTransitionElement.style.color = "white";
        
 
         }
+      
         if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-width: 350px)').matches){
             document.querySelector('.discussion').style['font-size'] = "8px";
             document.querySelector('.discussion').style['line-height'] = "23px";
@@ -1098,9 +1099,9 @@ passwordTransitionElement.style.color = "white";
             document.querySelector('.fifth-p').style.position = "relative";
             document.querySelector('.fifth-p').style.left = "-2px";
 
-            document.querySelector('.homeaboutmeu').style["font-size"] = "7px";
-            document.querySelector('.stylggg').style["font-size"] = "7px";
-            document.querySelector('.end').style["font-size"] = "7px";
+            document.querySelector('.homeaboutmeu').style["font-size"] = "6px";
+            document.querySelector('.stylggg').style["font-size"] = "6px";
+            document.querySelector('.end').style["font-size"] = "6px";
        
 
         }
@@ -2113,8 +2114,11 @@ cancelOrderButton.addEventListener('click',() =>{
         });
 
         buymecoffees.addEventListener('click', ()=>{
-            if(fullnamesLS.textContent !== ""&&passwordLS!=="" && emailsLS.textContent !== ""&& birthdayLS.textContent !== ""&&contactLS.textContent !== ""){
-
+            
+           // if(fullnamesLS.textContent !== ""&&passwordLS!=="" && emailsLS.textContent !== ""&& birthdayLS.textContent !== ""&&contactLS.textContent !== "")
+           const n = localStorage.getItem("Is_User_Name")
+            if(localStorage.getItem("Is_User_Name")!== ""&& localStorage.getItem("Is_User_Name")!==null){
+                console.log(n)
                 var alertmessageEng = "You want to buy coffee?";
                 var alertmessageRus = "Вы хотите купить кофе?";
                 if(localStorage.getItem("Is_Language")=== "english"){
@@ -2147,10 +2151,12 @@ cancelOrderButton.addEventListener('click',() =>{
                 }
                 
             }
-            else{
+           // else if(fullnamesLS.textContent === ""&&passwordLS!=="" && emailsLS.textContent === ""&& birthdayLS.textContent === ""&&contactLS.textContent === "") 
+           else {
+            console.log('buymecoffees clicked');
                 var alertmessageENG = 'You neeed to register in order to make a purchase.';
                 var alertmessageRUS = 'Вы должны зарегистрироваться, чтобы совершить покупку.';
-                if(localStorage.getItem('Is_Language')=== "english"){
+                if(localStorage.getItem('Is_Language')=== "english" ){
                     alert(alertmessageENG);
                 }
                 else if(localStorage.getItem('Is_Language')=== "russian"){
@@ -2158,7 +2164,7 @@ cancelOrderButton.addEventListener('click',() =>{
                 }
             }
             
-        })
+        });
         buttonMiddleForm.addEventListener('click',(e) =>{
             e.preventDefault();
             TransConfrimation();

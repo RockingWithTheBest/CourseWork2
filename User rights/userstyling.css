@@ -1,0 +1,12 @@
+*{
+    background-color: #849797;
+    font-family: Roboto;
+}
+h1.User.Agreement {
+    text-align: center;
+    color: black;
+    font-family: Roboto;
+}
+button.read {
+    width: 104px;
+}

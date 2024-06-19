@@ -3,6 +3,34 @@ console.log(localStorage.getItem('Is_Language'));
 burgerMenu.addEventListener( "click",function(){
    burgerMenu.classList.toggle('open');
 });
+
+const agreementCheck = document.getElementById('agreementCheckbox');
+const body = document.querySelector('body');
+document.querySelector(".agreement").addEventListener("click", ()=>{
+    
+    document.querySelector('#userrightZone').classList.remove('hidden');
+    document.querySelector('#container').classList.add('hidden');
+    agreementCheckbox.disabled = false;
+    document.querySelector('#userrightZone').style.color = "black";
+    document.querySelector('#userrightZone').style['font-family'] = "Roboto";
+    document.querySelector('.read').style.width = "104px";
+    body.style.backgroundColor = " #849797"
+ });
+
+ document.querySelector(".read").addEventListener("click", ()=>{
+    document.querySelector('#userrightZone').classList.add('hidden');
+        body.style.backgroundColor = "";
+        document.querySelector('#container').classList.remove('hidden');
+ });
+
+
+
+const agrementcheckBox = document.getElementById("agreementCheckbox");
+const agreemntLink = document.querySelector('.agreement');
+agreemntLink.addEventListener('click', () => {
+    console.log('agreement');
+    agreementCheckbox.disabled = false;
+  });
 //HErre
 if(localStorage.getItem("Is_Language")==="russian"){
     document.querySelector(".lorem").style.position = "relative";
@@ -86,18 +114,6 @@ if(localStorage.getItem("Is_Language")==="russian" && window.matchMedia('(max-wi
     document.querySelector(".lorem").style.left = "-24px";
     document.querySelector(".lorem").style['font-size'] = "9px";
     document.querySelector(".lorem").style['line-height'] = "10px";
-    // document.querySelector(".button1").style.position = "relative";
-    // document.querySelector(".button1").style.left = "198px";
-
-    
-    // document.querySelector(".button2").style.position = "relative";
-    // document.querySelector(".button2").style.left = "198px";
-    
-    // document.querySelector(".button3").style.position = "relative";
-    // document.querySelector(".button3").style.left = "198px";
-
-    // document.querySelector(".dropdown").style.position = "relative";
-    // document.querySelector(".dropdown").style.left = "198px";
 
 }
 
@@ -198,27 +214,11 @@ document.querySelector("#exitConfirm").addEventListener("click", ()=>{
     document.querySelector(".container99").classList.remove('hidden');
     document.querySelector("#password-transition").classList.add('hidden');
 });
-// const create = document.querySelector(".user")
-// create.addEventListener('click',() =>{
-//     container1.classList.remove('hidden');
-//     container2.classList.remove('hidden');
-//     container3.classList.remove('hidden');
-//     container4.classList.remove('hidden');
-//     container5.classList.remove('hidden');
-//     container6.classList.remove('hidden');   
-//     container7.classList.remove('hidden');
-//     container8.classList.remove('hidden');
-//     document.querySelector(".container99").classList.remove('hidden');
-//     document.querySelector("#container").classList.add('hidden');
-// }
 
 
 let btn = document.getElementById("btn");
 const storedTheme = localStorage.getItem('theme');
-// document.querySelector("#btn").addEventListener("click",() =>
-    {
-   
-}//);
+
 
 if (storedTheme === 'dark') {
   document.querySelector(".Wrapper").classList.add("dark-theme");
@@ -446,8 +446,18 @@ passwordTransitionElement.style.color = "white";
         const suammary = document.querySelector(".summary");
         const summaryConfirm = document.querySelector(".sumarryconfirm");
         const summarycancel = document.querySelector(".summarycancel");
-     
-    
+
+     const usergrament1 = document.querySelector(".UserAgreement");
+     const usergrament2 = document.querySelector(".onelist");
+     const usergrament3 = document.querySelector(".twolist");
+     const usergrament4 = document.querySelector(".threelist");
+     const usergrament5 = document.querySelector(".fourlist");
+     const usergrament6 = document.querySelector(".fiflist");
+     const usergrament7 = document.querySelector(".sevlist");
+     const usergrament8 = document.querySelector(".read");
+
+
+
        
               
         langLink.forEach(el =>{
@@ -458,6 +468,15 @@ passwordTransitionElement.style.color = "white";
                 const langAttr = el.getAttribute('language');
                 localStorage.setItem('Is_Language', langAttr);
 
+                usergrament1.textContent = agreemntUser[langAttr].UserAgreement;
+                usergrament2.textContent = agreemntUser[langAttr].onelist;
+                usergrament3.textContent = agreemntUser[langAttr].twolist;
+                usergrament4.textContent = agreemntUser[langAttr].threelist;
+                usergrament5.textContent = agreemntUser[langAttr].fourlist;
+                usergrament6.textContent = agreemntUser[langAttr].fiflist;
+                usergrament7.textContent =agreemntUser[langAttr].sevlist;
+                usergrament8.textContent = agreemntUser[langAttr].read;
+           
 
                 suammary.textContent = sumaryOrder[langAttr].summary;
                 summaryConfirm.textContent = sumaryOrder[langAttr].sumarryconfirm;
@@ -632,7 +651,28 @@ passwordTransitionElement.style.color = "white";
             })
         });
 
-        
+        var agreemntUser = {
+            "english":{
+                "UserAgreement":"Coffee House User Agreement",
+                "onelist":"ll customers must purchase a minimum of one item from the menu to remain on the premises. Refills on hot and iced coffee are permitted, but no outside food or drinks are allowed.",
+                "twolist":"Seating is available on a first-come, first-served basis. Customers may not reserve tables or hold seats for others not currently present. Tables are limited to a maximum of 4 persons per table during peak hours.",
+                "threelist":"Disruptive behavior, including loud conversations, use of offensive language, or failure to clean up after oneself, is prohibited. Management reserves the right to ask disruptive customers to leave.",
+                "fourlist":"The WiFi network is provided for customer use, but bandwidth may be limited during busy periods. Streaming of large media files is discouraged to ensure adequate connectivity for all.",
+                "fiflist":"Coffee House Inc. is not responsible for any lost, stolen, or damaged personal items left unattended on the premises. Valuables should be kept with the customer at all times.",
+                "sevlist":"By entering Coffee House Inc., you agree to abide by these terms of use. Management reserves the right to refuse service to anyone who fails to comply.",
+                "read":"Read Successfully"
+            },
+            "russian":{
+                "UserAgreement":"Соглашение пользователя Coffee House",
+                "onelist":"Все клиенты должны приобрести минимум одну позицию из меню, чтобы оставаться на территории. Разрешены доливки горячего и холодного кофе, но сторонняя еда и напитки не допускаются.",
+                "twolist":"Места для сидения предоставляются на основе принципа 'первым пришёл - первым обслужен'. Клиенты не могут резервировать столы или удерживать места для других, кто в данный момент не присутствует. Количество человек за одним столиком ограничено четырьмя во время часов пик.",
+                "threelist":"Недопустимое поведение, включая громкие разговоры, использование оскорбительной лексики или неспособность убрать за собой, запрещено. Администрация оставляет за собой право потребовать от нарушителей покинуть заведение.",
+                "fourlist":"Сеть Wi-Fi предоставляется для использования клиентами, но пропускная способность может быть ограничена в часы пик. Потоковая передача больших медиафайлов не рекомендуется, чтобы обеспечить должное подключение для всех.",
+                "fiflist":"Coffee House Inc. не несёт ответственности за любые потерянные, украденные или повреждённые личные вещи, оставленные без присмотра на территории. Ценные предметы следует держать при себе.",
+                "sevlist":"Входя в Coffee House Inc., вы соглашаетесь соблюдать данные условия использования. Администрация оставляет за собой право отказать в обслуживании любому, кто не будет им следовать.",
+                "read":"Прочитано успешно"
+            }
+         }        
         var sumaryOrder= {
             "english": {
                 "summary":"Order Summary",
@@ -1155,6 +1195,16 @@ passwordTransitionElement.style.color = "white";
 
          if(savedLang ==="english"){
             console.log("eng")
+
+            usergrament1.textContent = agreemntUser[langAttr].UserAgreement;
+            usergrament2.textContent = agreemntUser[langAttr].onelist;
+            usergrament3.textContent = agreemntUser[langAttr].twolist;
+            usergrament4.textContent = agreemntUser[langAttr].threelist;
+            usergrament5.textContent = agreemntUser[langAttr].fourlist;
+            usergrament6.textContent = agreemntUser[langAttr].fiflist;
+            usergrament7.textContent =agreemntUser[langAttr].sevlist;
+            usergrament8.textContent = agreemntUser[langAttr].read;
+
             suammary.textContent = sumaryOrder[langAttr].summary;
         
             summaryConfirm.textContent = sumaryOrder[langAttr].sumarryconfirm;
@@ -1324,6 +1374,16 @@ passwordTransitionElement.style.color = "white";
              lorem7.textContent = loremData[langAttr].lorem7; 
          }
          else {
+
+            usergrament1.textContent = agreemntUser[langAttrRus].UserAgreement;
+            usergrament2.textContent = agreemntUser[langAttrRus].onelist;
+            usergrament3.textContent = agreemntUser[langAttrRus].twolist;
+            usergrament4.textContent = agreemntUser[langAttrRus].threelist;
+            usergrament5.textContent = agreemntUser[langAttrRus].fourlist;
+            usergrament6.textContent = agreemntUser[langAttrRus].fiflist;
+            usergrament7.textContent =agreemntUser[langAttrRus].sevlist;
+            usergrament8.textContent = agreemntUser[langAttrRus].read;
+
             suammary.textContent = sumaryOrder[langAttrRus].summary;
 
         
